@@ -1,0 +1,57 @@
+.imaqliq * {
+    -webkit-transform: none !important;
+    -webkit-backface-visibility: initial !important;
+    -webkit-perspective: none !important;
+    -webkit-transform-style: flat !important
+}
+
+.imaqliq.gbox #mainmenu div,
+.imaqliq.gbox #appsmenu div,
+.imaqliq.gbox #channels-menu li span.name,
+.imaqliq.gbox #games-menu li,
+.imaqliq.gbox #games-total,
+.imaqliq.gbox #genres-menu li,
+.imaqliq.gbox #video-screen h1,
+.imaqliq.gbox #radiostations-menu li span.name {
+    text-shadow: none
+}
+
+.imaqliq.gbox #mainmenu div.selected,
+.imaqliq.gbox #mainmenu div:hover {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-iteration-count: 0;
+    animation-iteration-count: 0
+}
+
+.imaqliq.gbox #appsmenu div.selected,
+.imaqliq.gbox #appsmenu div:hover {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-iteration-count: 0;
+    animation-iteration-count: 0
+}
+
+.imaqliq.gbox #mainmenu div#mainmenu-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.imaqliq.gbox #mainmenu-selector div#mainmenu-selector-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.imaqliq.gbox #appsmenu div#appsmenu-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.imaqliq.gbox #appsmenu-selector div#appsmenu-selector-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.imaqliq.gbox #text-bar {
+    font-size: 44px
+}

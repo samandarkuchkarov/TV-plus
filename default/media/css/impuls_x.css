@@ -1,0 +1,2582 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/nunito-v12-latin_cyrillic-300.eot');
+    src: url('../fonts/Nunito/nunito-v12-latin_cyrillic-300.eot?#iefix') format('embedded-opentype'), url('../fonts/Nunito/nunito-v12-latin_cyrillic-300.woff2') format('woff2'), url('../fonts/Nunito/nunito-v12-latin_cyrillic-300.woff') format('woff'), url('../fonts/Nunito/nunito-v12-latin_cyrillic-300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/nunito-v12-latin_cyrillic-600.eot');
+    src: url('../fonts/Nunito/nunito-v12-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), url('../fonts/Nunito/nunito-v12-latin_cyrillic-600.woff') format('woff2'), url('../fonts/Nunito/nunito-v12-latin_cyrillic-600.woff2') format('woff'), url('../fonts/Nunito/nunito-v12-latin_cyrillic-600.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.eot');
+    src: url('../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2'), url('../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.woff') format('woff'), url('../fonts/Montserrat/montserrat-v14-latin_cyrillic-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+    font-family: "Nunito", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+}
+
+.screen,
+.play .screen,
+.transparent .screen {
+    background-image: url('../img/impuls-x/screen-bg.png')
+}
+
+.screen.popup {
+    background: transparent url(../img/impuls-x/transparent-popup-bg.png) repeat !important
+}
+
+.screen {
+    bottom: 0
+}
+
+.screen.popup .screen-container {
+    background-color: #003292 !important;
+    top: 200px
+}
+
+.logo {
+    background-image: none;
+    left: 890px
+}
+
+.client-logo {
+    margin-top: 60px
+}
+
+.selector-menu {
+    display: none
+}
+
+.screen-header {
+    background: transparent;
+    height: 100px;
+    line-height: 100px;
+    font-size: 26px;
+    margin-left: 80px;
+    padding: 0
+}
+
+.screen .screen-footer,
+.screen.popup .screen-footer {
+    background-color: transparent;
+    border-top: 0;
+    bottom: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif
+}
+
+.screen-footer .remote-button {
+    height: 24px;
+    width: 24px;
+    margin: 7px 2px 0 40px
+}
+
+.remote-button {
+    border: 0;
+    border-radius: 12px;
+    padding: 0
+}
+
+.screen-footer .remote-button.back {
+    background: url("../img/impuls-x/remote-button-back.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.enter {
+    background: url("../img/impuls-x/remote-button-enter.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.menu {
+    background: url("../img/impuls-x/remote-button-menu.png") no-repeat center center;
+    width: 48px
+}
+
+.screen-footer .remote-button.info {
+    background: url("../img/impuls-x/remote-button-info.png") no-repeat center center;
+    width: 48px
+}
+
+.screen-footer .remote-button.right {
+    background: url("../img/impuls-x/remote-button-right.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.left {
+    background: url("../img/impuls-x/remote-button-left.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.up {
+    background: url("../img/impuls-x/remote-button-up.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.down {
+    background: url("../img/impuls-x/remote-button-down.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.pause {
+    background: url("../img/impuls-x/remote-button-pause.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.stop {
+    background: url("../img/impuls-x/remote-button-stop.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.fwd {
+    background: url("../img/impuls-x/remote-button-fwd.png") no-repeat center center;
+    width: 24px
+}
+
+.screen-footer .remote-button.rew {
+    background: url("../img/impuls-x/remote-button-rew.png") no-repeat center center;
+    width: 24px
+}
+
+.icon {
+    width: 350px;
+    height: 350px;
+    background-position-y: 350px
+}
+
+.screen-container.loader,
+#player-mode-icon.loader {
+    background: transparent url("../img/impuls-x/loader.gif") center center no-repeat
+}
+
+#games-empty-list,
+#games-records-empty-list,
+#videocatalog-empty-list,
+#categorizedtv-empty-screen,
+#tvchannels-empty-screen,
+#empty-epg,
+#radio-empty-screen,
+#notifications-empty-category,
+#history-of-payments-empty-screen {
+    font-style: normal;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 80px;
+    text-align: left
+}
+
+.navigation-left,
+.navigation-right {
+    background: transparent;
+    padding: 0;
+    top: 335px
+}
+
+.navigation-left img,
+.navigation-right img {
+    display: none
+}
+
+.navigation-left {
+    left: 27px
+}
+
+.navigation-right {
+    left: 1240px
+}
+
+.navigation-left div {
+    background: url("../img/impuls-x/navigation-left.png");
+    width: 16px;
+    height: 42px
+}
+
+.navigation-right div {
+    background: url("../img/impuls-x/navigation-right.png");
+    width: 16px;
+    height: 42px
+}
+
+.scroll-arrow-up {
+    background: url('../img/impuls-x/scroll-arrow-up.png');
+    height: 11px;
+    margin: 0 auto 10px auto;
+    width: 28px
+}
+
+.scroll-arrow-down {
+    background: url('../img/impuls-x/scroll-arrow-down.png');
+    height: 11px;
+    margin: 0 auto 10px auto;
+    width: 28px
+}
+
+#popup-menu-screen-menu li.faded-scroll-bottom-third,
+#popup-menu-screen-menu li.faded-scroll-top-third {
+    color: #fff
+}
+
+#popup-menu-screen-menu li.faded-scroll-bottom-second,
+#popup-menu-screen-menu li.faded-scroll-top-second {
+    color: #fff
+}
+
+#popup-menu-screen-menu li.faded-scroll-bottom-first,
+#popup-menu-screen-menu li.faded-scroll-top-first {
+    color: #fff
+}
+
+#popup-menu-screen-menu li {
+    text-align: left;
+    width: 380px;
+    padding: 0 30px
+}
+
+#popup-menu-screen-menu {
+    margin: 0 20px 0 20px
+}
+
+#popup-menu-screen .screen-container {
+    width: 480px;
+    padding-top: 15px;
+    padding-bottom: 50px
+}
+
+#loading-bar {
+    background: transparent url("../img/impuls-x/loader.gif") no-repeat
+}
+
+#firstloading-loader {
+    background: url('../img/impuls-x/loader.gif') no-repeat;
+    height: 130px;
+    width: 130px
+}
+
+#icon-categorizedtv {
+    background-image: url('../img/impuls-x/mainmenu-categorizedtv-icon.png')
+}
+
+#icon-tvchannels {
+    background-image: url('../img/impuls-x/mainmenu-tvchannels-icon.png')
+}
+
+#icon-videocatalog {
+    background-image: url('../img/impuls-x/mainmenu-videocatalog-icon.png')
+}
+
+#icon-account {
+    background-image: url('../img/impuls-x/mainmenu-info-icon.png')
+}
+
+#icon-settings {
+    background-image: url('../img/impuls-x/mainmenu-settings-icon.png')
+}
+
+#icon-apps {
+    background-image: url('../img/impuls-x/mainmenu-apps-icon.png')
+}
+
+#icon-exit {
+    background-image: url('../img/impuls-x/mainmenu-exit-icon.png')
+}
+
+#mainmenu {
+    margin: 80px 0 90px 50px;
+    width: 1100px
+}
+
+#mainmenu div,
+#appsmenu div {
+    font-size: 26px;
+    width: 270px;
+    height: 230px;
+    margin: 0
+}
+
+.mainmenu-item-label,
+.appsmenu-item-label {
+    margin-top: -130px !important;
+    text-align: center;
+    width: 350px
+}
+
+#mainmenu div span,
+#appsmenu div span {
+    display: block;
+    margin: 0
+}
+
+#mainmenu div#mainmenu-selection,
+#appsmenu div#appsmenu-selection {
+    display: none
+}
+
+.menu-selection {
+    width: 432px !important;
+    height: 288px !important
+}
+
+#mainmenu div.selected .icon,
+#appsmenu div.selected .icon {
+    background-position-y: 0
+}
+
+#mainmenu div.selected .mainmenu-item-label,
+#appsmenu div.selected .appsmenu-item-label {
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: -90px !important;
+    color: white
+}
+
+.client-site,
+.client-support {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    text-align: right;
+    left: 890px;
+    width: 335px
+}
+
+.client-support {
+    top: 635px
+}
+
+.client-site {
+    top: 600px
+}
+
+#epg-categories-menu {
+    margin: 10px 0 0 50px;
+    width: 300px
+}
+
+#categorizedtv-genres {
+    text-transform: lowercase
+}
+
+#epg-categories-menu li {
+    padding: 0 30px 0 30px
+}
+
+#epg-categories-menu li.selected {
+    color: #fff;
+    font-size: 30px
+}
+
+#epg-categories-menu.selected li.selected,
+#programs-menu.selected li.selected {
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff
+}
+
+#programs-menu li div.timeline {
+    opacity: .302
+}
+
+#programs-menu li img {
+    margin-bottom: -5px
+}
+
+#channels-menu li,
+#epg-categories-menu li,
+#radiostations-menu li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    height: 57px;
+    border-radius: 30px
+}
+
+#programs-menu li,
+#notifications-menu li {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    height: 57px;
+    font-size: 26px
+}
+
+.programs-menu-span {
+    line-height: 26px
+}
+
+#programs-menu li span.name {
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 0;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 705px
+}
+
+#programs-menu .program-genre {
+    font-size: 26px;
+    font-weight: bold;
+    width: 200px;
+    display: inline-block
+}
+
+#programs-menu li span.begin-time {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    width: 90px
+}
+
+.current-section {
+    text-transform: none;
+    font-weight: bold
+}
+
+.right-header {
+    background-color: transparent;
+    font-size: 26px;
+    font-weight: bold;
+    height: 100px;
+    line-height: 1.154;
+    left: 915px;
+    padding: 40px 0 0 0;
+    width: 315px
+}
+
+.screen-clock {
+    background-color: transparent;
+    color: #fff;
+    font-size: 22px;
+    height: 100px;
+    left: 540px;
+    line-height: 100px;
+    padding: 0
+}
+
+div.timeline,
+div.timeline.invert {
+    background-color: #4590ed !important;
+    border-radius: 2px;
+    height: 3px
+}
+
+.timeline-container {
+    width: 705px;
+    margin-top: -5px
+}
+
+div.timeline-gone,
+.info-suffix div.timeline-gone,
+#programs-menu li .timeline-container div {
+    background-color: #f7f9ff !important;
+    border-radius: 2px;
+    height: 3px;
+    margin-top: -3px
+}
+
+#programs-menu {
+    margin: 0 50px 8px 400px
+}
+
+#tvepg-menu li span.begin-time,
+#programs-menu li span.begin-time,
+#notifications-menu li span.begin-time {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    font-weight: normal
+}
+
+span.end-time {
+    display: none
+}
+
+#channels-menu li img,
+#programs-menu li img,
+#epg-current-channel img,
+#notifications-menu li img,
+#sort-channels-menu li img {
+    padding: 2px;
+    height: 40px;
+    width: 40px
+}
+
+#channels-menu li img {
+    line-height: 40px;
+    vertical-align: inherit;
+    margin: 0 25px 7px 0
+}
+
+#popup-genres-screen .screen-container {
+    background: #003292 !important
+}
+
+#popup-genres-screen .screen-footer {
+    background: transparent
+}
+
+#epg-genres-menu div {
+    border-radius: 30px;
+    border: 2px solid transparent;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    height: 41px;
+    margin: 10px 20px 0 30px;
+    width: 260px
+}
+
+.popup-list div.selected {
+    background-color: transparent;
+    border: 2px solid #a761c6 !important
+}
+
+.popup-list li.selected {
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    font-weight: bold !important;
+    color: #fff
+}
+
+#popup-menu-screen-menu li,
+#popup-list-menu div {
+    border-radius: 30px
+}
+
+.genre-menu-check-icon {
+    background-color: #fff !important;
+    border: 2px solid #a761c6 !important;
+    border-radius: 12px;
+    display: inline-block;
+    height: 20px;
+    margin: 8px 0 0 30px;
+    padding: 0;
+    opacity: .8;
+    width: 20px
+}
+
+.genre-menu-label {
+    vertical-align: top;
+    padding-left: 10px;
+    line-height: 44px
+}
+
+.selected .genre-menu-label {
+    font-weight: bold;
+    font-size: 26px
+}
+
+.popup-list div.selected .genre-menu-check-icon {
+    opacity: 1 !important
+}
+
+.genre-menu-check-icon.checked,
+#epg-genres-menu div.selected .genre-menu-check-icon.checked {
+    background: 0;
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%) !important;
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%) !important;
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%) !important;
+    border: none !important;
+    height: 24px;
+    width: 24px
+}
+
+#tvchannels-header {
+    line-height: 100px
+}
+
+#tvchannels-header .right-header {
+    line-height: 100px;
+    padding: 0
+}
+
+#tvchannels-header-category {
+    color: #fff;
+    font-size: 26px
+}
+
+#current-category {
+    text-transform: lowercase
+}
+
+.screen-list li.selected,
+.screen-list li:hover {
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    font-weight: bold !important;
+    color: #fff
+}
+
+#tvchannels-screen.preview {
+    background: url('../img/impuls-x/screen-bg-scaled-player.png') !important
+}
+
+#scaled-player {
+    background-color: #4590ed;
+    border-radius: 9px;
+    margin-top: 0;
+    margin-left: 470px;
+    width: 760px;
+    height: 430px
+}
+
+#player-mode-info {
+    margin-left: 470px;
+    width: 760px
+}
+
+#player-mode-channel-name,
+#player-mode-program-name {
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+#player-mode-icon {
+    background: url("../img/impuls-x/player-mode-icon.png") center center no-repeat
+}
+
+#channels-menu {
+    margin: 10px 0 0 50px;
+    width: 445px
+}
+
+#channels-menu li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    line-height: 57px;
+    padding: 0 30px 0 30px;
+    width: 1120px;
+    z-index: 1
+}
+
+#channels-menu li span.name {
+    width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    line-height: 57px
+}
+
+#channels-menu li.selected,
+#channels-menu li:hover {
+    font-size: 28px;
+    color: #fff
+}
+
+#channels-menu li span.number {
+    text-align: left
+}
+
+.preview #channels-menu {
+    margin-top: 0;
+    width: 400px
+}
+
+#channels-menu li span.number {
+    color: #fff !important
+}
+
+#tvepg-menu {
+    margin-top: 10px
+}
+
+#tvepg-menu li {
+    position: relative;
+    font-size: 26px;
+    font-weight: bold;
+    height: 57px;
+    line-height: 57px;
+    width: 730px
+}
+
+.program-info {
+    line-height: 26px;
+    vertical-align: super;
+    position: relative;
+    z-index: 2
+}
+
+#tvepg-menu li span.program-name {
+    font-family: "Nunito", sans-serif;
+    font-size: 26px;
+    margin-left: 20px;
+    width: 600px
+}
+
+#tvepg-menu .timeline {
+    margin-top: -15px;
+    width: 710px;
+    position: relative;
+    z-index: 2
+}
+
+#tvepg-menu .timeline-gone {
+    position: relative;
+    z-index: 2
+}
+
+#tvepg-menu .selected .timeline {
+    background-color: #fff !important;
+    opacity: .5
+}
+
+#tvchannels-screen.preview #channels-menu li {
+    width: 340px
+}
+
+#player-mode-program-progress {
+    left: 530px !important;
+    width: 637px
+}
+
+#player-mode-description {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px
+}
+
+.show-info .info-suffix {
+    width: 975px;
+    font-weight: bold
+}
+
+.show-info .begin-time {
+    color: #fff;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    padding: 0;
+    width: 100px
+}
+
+div.program-category {
+    font-size: 26px;
+    font-family: "Nunito", sans-serif;
+    width: 975px
+}
+
+.program-category-genre {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 10px;
+    white-space: nowrap;
+    width: 210px
+}
+
+.preview #channels-menu li span.name {
+    width: 220px
+}
+
+.show-info #channels-menu li img {
+    margin-top: 7px
+}
+
+.info-suffix .end-time {
+    display: inline-block
+}
+
+#genres-menu {
+    margin: 10px 0 20px 50px;
+    width: 300px
+}
+
+#genres-menu li {
+    border-radius: 30px;
+    font-size: 28px;
+    margin: 0;
+    padding: 0 30px
+}
+
+#genres-menu.selected li.selected,
+#videos-menu.selected li.selected {
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    font-weight: bold;
+    color: #fff !important
+}
+
+#genres-menu li.selected {
+    font-weight: bold;
+    color: #fff
+}
+
+#videos-menu li p {
+    font-size: 24px;
+    line-height: 1.083;
+    text-align: center
+}
+
+#videos-menu.selected li.selected p {
+    font-weight: bold;
+    color: #fff
+}
+
+#video-screen h1 {
+    color: #fff;
+    margin: 10px 0 0 470px
+}
+
+#video-screen strong {
+    margin: 0 0 0 470px;
+    color: #fff
+}
+
+#video-screen strong#duration {
+    margin-top: 10px
+}
+
+#video-description {
+    margin-left: 470px
+}
+
+#videoactions-menu li {
+    border-radius: 30px;
+    border: 3px solid #a761c6;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: 0 30px 0 0;
+    text-transform: uppercase;
+    width: 306px !important;
+    height: 53px;
+    line-height: 53px
+}
+
+#videoactions-menu li.selected {
+    height: 59px;
+    line-height: 59px;
+    width: 312px !important
+}
+
+.button {
+    background-color: transparent !important
+}
+
+.button.selected,
+.button.hover {
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    border: none !important;
+    font-weight: bold !important
+}
+
+#videocatalog-sort-header {
+    background: transparent;
+    padding: 0;
+    line-height: 100px
+}
+
+#videos-menu li img,
+#videos-menu li {
+    border-radius: 10px
+}
+
+#videos-menu {
+    margin: 0 0 0 380px
+}
+
+#videos-menu li {
+    height: 270px;
+    margin: 0 10px 10px 0;
+    padding: 6px 6px;
+    width: 155px
+}
+
+#videos-menu li img {
+    height: 211px;
+    width: 155px
+}
+
+.list-video-provided-by {
+    background: url("../img/impuls-x/provider-list-bg.png") repeat scroll 0 0;
+    display: none;
+    width: 155px;
+    height: 27px;
+    position: relative;
+    top: -277px;
+    left: 0
+}
+
+.list-video-provider-logo {
+    height: 24px;
+    position: relative;
+    top: -2px
+}
+
+#videocatalog-no-videos-in-category {
+    font-style: normal;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 57px;
+    margin: 10px 0 0 380px;
+    text-align: left
+}
+
+#video-screen img#video-cover {
+    border-radius: 10px;
+    height: 540px;
+    left: 80px;
+    margin: 10px 0 0 0;
+    position: absolute;
+    width: 370px
+}
+
+#video-screen #video-provided-by {
+    background: url("../img/impuls-x/provider-description-bg.png");
+    left: 80px;
+    top: 610px;
+    width: 370px;
+    height: 40px
+}
+
+#video-screen #video-provider-logo {
+    height: 33px;
+    position: relative;
+    top: 8px
+}
+
+#video-screen p {
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: "Montserrat", sans-serif;
+    margin: 20px 20px 0 470px;
+    width: 755px
+}
+
+#video-actions-panel {
+    position: absolute;
+    top: 590px;
+    left: 470px;
+    margin: 0;
+    height: 59px
+}
+
+#video-screen #origin-name {
+    font-size: 20px;
+    color: #fff
+}
+
+#video-screen .label-genre,
+#video-screen .label-year,
+#video-screen .label-director,
+#video-screen .label-actors {
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    width: 115px
+}
+
+#video-screen span#video-year,
+#video-screen span#video-genre,
+#video-screen span#video-director,
+#video-screen span#video-actors {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: text-top
+}
+
+#appsmenu div span.icon {
+    background-image: url('../img/impuls-x/mainmenu-apps-icon.png') !important
+}
+
+#app-icon-games {
+    background-image: url('../img/impuls-x/mainmenu-games-icon.png') !important
+}
+
+#appsmenu div span {
+    text-align: center
+}
+
+#appsmenu {
+    margin: 0 0 90px 50px;
+    width: 1100px
+}
+
+#account-menu li {
+    border-radius: 30px;
+    padding: 0 30px
+}
+
+#account-menu {
+    width: 420px;
+    margin: 10px 0 0 30px
+}
+
+#info-menu {
+    margin: 10px 0 0 50px;
+    width: 770px
+}
+
+#info-menu li {
+    border-radius: 30px;
+    font-size: 24px
+}
+
+#info-menu li.selected {
+    height: 57px;
+    line-height: 57px
+}
+
+#info-menu li.selected div.value {
+    background-color: transparent
+}
+
+#info-menu li div.key {
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 0 30px;
+    width: 400px
+}
+
+#info-menu li div.value {
+    text-align: left;
+    width: auto
+}
+
+#balance-menu {
+    margin: 10px 0 0 50px;
+    width: 600px
+}
+
+#balance1,
+#tariffs-nav-right,
+#tariffs-nav-down {
+    display: none
+}
+
+#balance-menu li {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    height: 41px
+}
+
+#balance-menu li div.key {
+    width: 340px;
+    margin: 0;
+    padding: 0 0 0 30px
+}
+
+#balance-menu li div.value {
+    text-align: left;
+    width: auto
+}
+
+#balance-menu li.balance-rates {
+    margin-top: 15px
+}
+
+#tariffs {
+    margin-left: 0;
+    position: absolute;
+    top: 260px;
+    left: 720px
+}
+
+#basic-tariffs {
+    position: inherit;
+    margin-left: 0
+}
+
+.tariff {
+    background-color: transparent;
+    border: solid 2px transparent;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    line-height: 41px;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0 30px 0 30px;
+    width: 480px
+}
+
+.tariff .radio-button,
+.tariff .checkbox {
+    margin: 10px -1px
+}
+
+.tariff.selected,
+.tariff:hover {
+    border: solid 2px #3eb5f1;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-size: 26px;
+    font-weight: bold
+}
+
+.tariff span {
+    display: inline-block;
+    float: left;
+    font-family: "Nunito", sans-serif;
+    font-size: 24px;
+    margin-left: 30px
+}
+
+.tariff-price {
+    font-size: 24px;
+    float: right !important
+}
+
+#tariff-description {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    left: 35px;
+    line-height: 1.3;
+    margin-top: 0;
+    position: absolute;
+    text-align: left;
+    top: 560px;
+    padding: 0 15px;
+    width: 900px
+}
+
+#balance-debt {
+    color: #fff !important
+}
+
+#tariff-description-header {
+    font-family: "Nunito", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 34px
+}
+
+.additional-tariffs-header {
+    position: absolute;
+    top: 205px;
+    left: 720px
+}
+
+#payment-form-container {
+    background: url("../img/impuls-x/card-form-bg.png");
+    height: 407px;
+    margin-left: 80px;
+    width: 790px
+}
+
+#payment-form-container label {
+    margin: 0 0 7px 20px
+}
+
+#payment-form-container input {
+    text-align: left
+}
+
+#card-front,
+#card-back {
+    background-color: transparent;
+    letter-spacing: 0
+}
+
+#shadow,
+#card-stripe,
+#card-image {
+    display: none
+}
+
+.label-payment-description-message {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 26px;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 790px
+}
+
+#card-input1 {
+    margin-top: 10px
+}
+
+#amount-value {
+    margin: 0 10px 25px;
+    width: 98px
+}
+
+#card-input2 {
+    width: 330px
+}
+
+#card-front,
+#card-back {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    height: 355px;
+    width: 630px
+}
+
+#card-input6 {
+    border: 3px solid #a761c6;
+    border-radius: 30px;
+    height: 59px;
+    line-height: 59px;
+    left: 820px;
+    top: 330px;
+    padding: 0;
+    width: 245px
+}
+
+#card-input6.selected {
+    border: 0;
+    height: 65px;
+    line-height: 65px;
+    width: 251px
+}
+
+.card-input input,
+#exp-container div {
+    border-radius: 30px;
+    border: 3px solid transparent;
+    color: #003292;
+    opacity: .702;
+    padding: 0 20px;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "Montserrat", sans-serif
+}
+
+#card-input5 {
+    left: 618px;
+    top: 275px;
+    width: 134px
+}
+
+#card-cvc {
+    width: 88px
+}
+
+#card-number {
+    width: 500px
+}
+
+#card-holder {
+    width: 270px
+}
+
+#card-input3 {
+    width: 40px !important
+}
+
+#card-input4 {
+    width: 70px
+}
+
+.label-expiration {
+    margin: 0 0 7px 20px !important
+}
+
+#exp-container {
+    float: none;
+    width: 215px;
+    margin-left: 0
+}
+
+.card-input.selected input,
+.card-input:hover input,
+#exp-container div.selected,
+#exp-container div:hover {
+    border: 3px solid #a761c6;
+    opacity: 1
+}
+
+#history-of-payments-menu li,
+#history-of-promo-codes-menu li {
+    border-radius: 30px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#history-of-payments-menu li.selected,
+#history-of-promo-codes-menu.selected li.selected {
+    background: 0;
+    border: 3px solid #a761c6;
+    color: #fff;
+    font-size: 26px
+}
+
+#history-of-payments-menu-header {
+    margin: 0 0 30px 50px
+}
+
+#history-of-payments-menu {
+    margin: 15px 0 0 50px
+}
+
+#history-of-payments-menu-header div {
+    background-color: transparent;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff
+}
+
+#history-of-payments-menu,
+#history-of-payments-menu-header {
+    width: 780px
+}
+
+#history-of-payments-menu li div,
+#history-of-payments-menu-header div {
+    text-align: left
+}
+
+.history-comment,
+.label-history-comment {
+    padding: 0 0 0 30px !important
+}
+
+#service-info {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 650px
+}
+
+#documents-menu {
+    border-radius: 50px;
+    margin-left: 50px;
+    width: 570px
+}
+
+.document.selected,
+.document:hover {
+    border: 0
+}
+
+.document {
+    border-radius: 30px;
+    display: block;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    height: 57px;
+    line-height: 57px;
+    margin: 0;
+    padding: 0 30px;
+    text-align: left;
+    width: 510px
+}
+
+#legal-document-content {
+    margin: 0 0 0 80px;
+    width: 1120px
+}
+
+#legal-document-header {
+    width: 400px
+}
+
+#login-header,
+.screen-header.label-signup {
+    margin-left: 110px
+}
+
+#login-menu {
+    margin-top: 180px
+}
+
+#login-screen label {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 110px
+}
+
+#login-screen input,
+#signup-screen input,
+#promo-activation-screen input {
+    border-radius: 30px;
+    border: 3px solid transparent;
+    color: #003292;
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    opacity: .4;
+    margin-left: 90px;
+    padding: 0 20px;
+    width: 410px
+}
+
+#login-menu li.selected input,
+#signup-screen input:focus,
+#signup-screen input.selected,
+#promo-activation-menu.selected li.selected input {
+    border: 3px solid #a761c6;
+    background: #fff;
+    opacity: 1
+}
+
+#login-button,
+#promo-activation-button {
+    border: 3px solid #a761c6;
+    border-radius: 30px;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    height: 59px;
+    line-height: 59px;
+    margin-left: 90px;
+    margin-top: 60px;
+    padding: 0 30px;
+    width: 225px
+}
+
+#login-menu li.selected #login-button,
+#promo-activation-menu.selected li.selected #promo-activation-button {
+    background-image: -moz-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -webkit-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    background-image: -ms-linear-gradient(0, #dc9fc4 0, #9a52c7 100%);
+    border: 0;
+    font-weight: bold;
+    height: 65px;
+    line-height: 65px;
+    width: 231px
+}
+
+#login-screen p#custom-login-text,
+#promo-activation-screen p {
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.462;
+    position: absolute;
+    margin: 0 0 40px 110px;
+    top: 110px;
+    width: 810px
+}
+
+#signup-screen p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    margin: 110px 0 0 110px;
+    width: 960px
+}
+
+#signup-screen p.label-signup-help-text {
+    font-size: 20px !important;
+    font-family: "Montserrat", sans-serif;
+    width: 760px
+}
+
+#signup-screen input {
+    margin-top: 10px
+}
+
+#settings-menu {
+    width: 768px;
+    margin: 10px 0 0 50px
+}
+
+#settings-menu li {
+    border-radius: 30px;
+    height: 57px;
+    line-height: 57px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 30px
+}
+
+#settings-menu li div.key {
+    padding: 0;
+    width: 350px
+}
+
+#settings-menu li.selected .key {
+    background: transparent !important;
+    color: white;
+    font-weight: bold
+}
+
+#settings-menu li div.value {
+    font-family: "Nunito", sans-serif;
+    width: 350px
+}
+
+#settings-menu li.selected div.value {
+    background: transparent
+}
+
+#settings-menu li div.value div.remote-button {
+    height: 26px !important;
+    line-height: 26px !important;
+    width: 9px
+}
+
+#settings-menu li div.value div.remote-button.left {
+    background: url(../img/impuls-x/list-arrow-left.png) no-repeat center center
+}
+
+#settings-menu li div.value div.remote-button.right {
+    background: url(../img/impuls-x/list-arrow-right.png) no-repeat center center
+}
+
+#sort-channels-menu li {
+    border-radius: 30px;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    height: 57px;
+    line-height: 57px;
+    padding: 0 30px;
+    width: 815px
+}
+
+.sort-list li {
+    background: transparent
+}
+
+#sort-channels-menu li img {
+    margin: 0 15px 5px 30px
+}
+
+.sort-list li div,
+.sort-list li div.enabled {
+    width: 37px;
+    height: 57px;
+    margin: 0 auto
+}
+
+.sort-list li div.enabled {
+    background-position-y: -114px !important
+}
+
+#parent-menu li div,
+#parent-menu li div.enabled {
+    background: transparent url(../img/impuls-x/sort-parent-icon.png) no-repeat
+}
+
+#hide-menu li div,
+#hide-menu li div.enabled {
+    background: transparent url(../img/impuls-x/sort-hide-icon.png) no-repeat
+}
+
+#move-up-menu li div,
+#move-up-menu li div.enabled {
+    background: transparent url(../img/impuls-x/sort-up-icon.png) no-repeat
+}
+
+#move-down-menu li div,
+#move-down-menu li div.enabled {
+    background: transparent url(../img/impuls-x/sort-down-icon.png) no-repeat
+}
+
+.sort-list li {
+    border: 0;
+    background: transparent !important;
+    height: 57px
+}
+
+.sort-list.selected li.selected {
+    border: 0
+}
+
+.sort-list.selected li.selected div {
+    background-position-y: -57px !important
+}
+
+.sort-list.selected li.selected div.enabled {
+    background-position-y: -171px !important
+}
+
+.sort-list {
+    margin: 10px 0 0 17px
+}
+
+#epg-header {
+    height: 100px;
+    line-height: 100px
+}
+
+#epg-current-channel {
+    font-size: 26px;
+    position: absolute;
+    left: 915px;
+    top: 0
+}
+
+#epg-current-channel img {
+    margin-right: 15px
+}
+
+#epg-day-menu {
+    background-color: transparent;
+    color: #fff;
+    font-size: 22px;
+    padding: 0;
+    width: 390px
+}
+
+#epg-menu {
+    margin: 0 0 10px 50px
+}
+
+#epg-menu-scroll-down {
+    background: url(../img/impuls-x/scroll-arrow-down.png);
+    height: 11px;
+    width: 27px;
+    position: absolute;
+    top: 657px;
+    left: 95px
+}
+
+#epg-menu li {
+    border-radius: 30px;
+    border: 0;
+    font-size: 26px;
+    font-weight: normal;
+    height: 57px;
+    line-height: 57px;
+    margin: 0;
+    padding: 0 30px 0 30px;
+    width: 635px
+}
+
+#epg-day-menu .remote-button,
+#epg-day-menu span {
+    height: 100px;
+    line-height: 100px
+}
+
+#epg-day-menu-today {
+    width: 320px
+}
+
+#epg-menu li.faded-scroll-bottom-second span,
+#epg-menu li.faded-scroll-top-second span {
+    color: #fff !important
+}
+
+.epg-air-time {
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.692;
+    width: 110px;
+    padding: 0
+}
+
+.epg-air-time .time {
+    color: #fff !important;
+    width: 85px;
+    display: inline-block
+}
+
+.has-notification .time {
+    color: #ffef00 !important
+}
+
+.notification {
+    display: none
+}
+
+#epg-menu li.faded-scroll-bottom-second,
+#epg-menu li.faded-scroll-top-second,
+#epg-menu li.faded-scroll-bottom-first,
+#epg-menu li.faded-scroll-top-first,
+.epg-air-time,
+#epg-menu li.faded-scroll-bottom-third span,
+#epg-menu li.faded-scroll-top-third span {
+    color: #fff !important
+}
+
+.epg-has-record {
+    background: transparent url(../img/impuls-x/epg-record-icon.png) no-repeat;
+    margin: 0 0 4px 0;
+    width: 13px;
+    height: 13px
+}
+
+#epg-menu li.selected,
+#epg-menu li.selected span {
+    background-color: transparent;
+    color: #fff
+}
+
+#epg-menu li.selected span {
+    font-weight: normal
+}
+
+#epg-info {
+    margin: 0 20px 0 795px
+}
+
+#epg-info p {
+    background: transparent;
+    font-size: 22px;
+    padding: 0
+}
+
+#epg-info-table {
+    margin-top: 10px
+}
+
+#epg-program-desc-text {
+    font-size: 20px;
+    font-weight: bold;
+    width: 430px
+}
+
+#epg-channel-program-description span {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.091
+}
+
+#epg-channel-program-rating img {
+    display: none
+}
+
+#epg-channel-program-rating {
+    color: #fff;
+    font-size: 26px;
+    position: absolute;
+    right: 110px
+}
+
+#epg-channel-program-rating .age-rating {
+    border-radius: 50%;
+    background-color: #003292;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 60px;
+    opacity: .6;
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 305px;
+    margin: 0;
+    height: 60px;
+    width: 60px
+}
+
+#epg-channel-program-rating .kinopoisk-rating,
+#epg-channel-program-rating .imdb-rating {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.375;
+    text-align: left
+}
+
+#epg-channel-program-rating .kinopoisk-rating span,
+#epg-channel-program-rating .imdb-rating span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 2
+}
+
+#epg-channel-program-preview {
+    height: 226px;
+    width: 300px;
+    margin: 0 0 10px 0
+}
+
+#epg-info p strong {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.333
+}
+
+#epg-info table td.epg-table-value {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2
+}
+
+#epg-day-menu .remote-button.left {
+    background: url("../img/impuls-x/remote-button-left.png") no-repeat center center;
+    width: 24px
+}
+
+#epg-day-menu .remote-button.right {
+    background: url("../img/impuls-x/remote-button-right.png") no-repeat center center;
+    width: 24px
+}
+
+#notifications-menu {
+    margin: 10px 25px 0 50px
+}
+
+#notifications-menu li {
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    width: 1120px
+}
+
+#notifications-menu li img {
+    margin-right: 25px
+}
+
+#notifications-menu li span.program-name {
+    display: inline;
+    font-family: "Nunito", sans-serif;
+    width: 540px;
+    vertical-align: inherit
+}
+
+#notifications-menu li span.begin-time {
+    font-size: 26px;
+    font-weight: normal;
+    padding: 0;
+    width: 300px;
+    vertical-align: inherit
+}
+
+#notifications-menu li span.name {
+    display: inline-block;
+    font-family: "Nunito", sans-serif;
+    padding: 0;
+    vertical-align: inherit;
+    overflow: initial;
+    width: 260px
+}
+
+.screen.popup .screen-container-keyboard {
+    background-color: #003292;
+    border-radius: 10px;
+    width: 860px;
+    height: 406px;
+    padding: 40px 30px 30px 30px
+}
+
+#popup-keyboard-screen input {
+    background-color: #f7f9ff;
+    border-radius: 26px;
+    border: 3px solid #a761c6;
+    color: #003292;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.467;
+    padding: 0 30px;
+    width: 795px
+}
+
+#popup-keyboard-screen ul li {
+    background-color: transparent;
+    border: 4px solid transparent;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif
+}
+
+#popup-keyboard-screen ul.keyboard-menu4 {
+    margin-left: 790px;
+    margin-top: -198px
+}
+
+#popup-keyboard-screen ul li.k4 {
+    width: 54px;
+    height: 190px;
+    line-height: 190px
+}
+
+#popup-keyboard-screen ul li.k1 {
+    width: 45px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 15px 0 0
+}
+
+#popup-keyboard-screen ul li.k2 {
+    width: 123px;
+    height: 50px
+}
+
+#popup-keyboard-screen ul li.k5 {
+    width: 480px;
+    height: 50px;
+    margin-right: 3px
+}
+
+.only-digits ul.keyboard-menu li.k1,
+.upper-latin ul li.k5,
+.digits-letters ul li.k1,
+.upper-latin ul li.k1,
+.service #five-key5,
+.service #five-key4 {
+    background-color: transparent !important;
+    color: #fff !important
+}
+
+.service ul li.k1,
+.service ul li.k5,
+.upper-latin ul.keyboard-menu li.k1,
+.upper-latin #one-key0,
+.upper-latin #two-key0,
+.upper-latin #three-key0,
+.upper-latin #five-key0,
+.upper-latin #five-key1,
+.upper-latin #three-key7,
+.upper-latin #three-key9,
+.upper-latin #three-key10,
+.digits-letters #one-key0,
+.digits-letters #two-key0,
+.digits-letters #five-key0,
+.digits-letters #five-key1,
+.digits-letters #five-key3,
+.digits-letters #three-key7,
+.digits-letters #three-key8,
+.digits-letters #three-key9,
+.digits-letters #three-key10 {
+    background-color: transparent !important;
+    color: rgba(255, 255, 255, 0.302) !important
+}
+
+#popup-keyboard-screen ul li.k1.selected,
+#popup-keyboard-screen ul li.k2.selected,
+#popup-keyboard-screen ul li.k4.selected,
+#popup-keyboard-screen ul li.k5.selected {
+    background-color: transparent !important;
+    border: 4px solid #a761c6;
+    font-weight: bold
+}
+
+#five-key4 {
+    background-image: url(../img/impuls-x/keyboard-button-left.png) !important
+}
+
+#five-key5 {
+    background-image: url(../img/impuls-x/keyboard-button-right.png) !important
+}
+
+#popup-key-panel-screen .screen-container {
+    width: 1141px;
+    left: 0;
+    margin: auto;
+    padding: 20px 20px 20px
+}
+
+#key-panel-menu div {
+    border-width: 4px !important;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 154px;
+    height: 174px
+}
+
+.Rectangle_6 {
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10px;
+    position: absolute;
+    left: 78px;
+    top: 275px;
+    width: 161px;
+    height: 161px;
+    z-index: 197
+}
+
+.key-panel-button.enter {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center 0 no-repeat
+}
+
+.key-panel-button.menu {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -61px no-repeat
+}
+
+.key-panel-button.info {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -122px no-repeat
+}
+
+.key-panel-button.red {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -184px no-repeat
+}
+
+.key-panel-button.green {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -244px no-repeat
+}
+
+.key-panel-button.yellow {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -305px no-repeat
+}
+
+.key-panel-button.blue {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -366px no-repeat
+}
+
+.key-panel-button.back {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -427px no-repeat
+}
+
+.key-panel-button.aspect {
+    background: transparent url("../img/impuls-x/panel-key-icon.png") center -610px no-repeat
+}
+
+.key-panel-button {
+    height: 61px !important;
+    margin: 30px 0 25px 0
+}
+
+.key-panel-button-label {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px
+}
+
+.selected .key-panel-button-label {
+    font-size: 22px;
+    font-weight: bold
+}
+
+#speedtest-info-menu {
+    margin: 10px 0 0 80px;
+    width: 750px
+}
+
+#speedtest-info-menu li {
+    font-size: 26px;
+    height: 46px
+}
+
+#speedtest-info-menu li div.key {
+    margin: 0;
+    padding: 0;
+    width: 400px
+}
+
+#speedtest-info-menu li div.value {
+    text-align: left;
+    width: 350px
+}
+
+#tv-infobar,
+#video-infobar {
+    background-image: -moz-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -webkit-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -ms-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    bottom: 5px;
+    padding: 20px 40px 25px;
+    left: 10px;
+    right: 10px
+}
+
+#tv-infobar-channel-name {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    max-width: 400px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#tv-infobar-program-name {
+    color: #fff;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0;
+    max-width: 770px
+}
+
+#clock-icon {
+    background-image: url(../img/impuls-x/clock-icon.png);
+    height: 27px;
+    margin: 0;
+    width: 26px;
+    top: 0;
+    right: 0;
+    position: inherit;
+    float: inherit;
+    vertical-align: top
+}
+
+#tv-infobar-current-time {
+    font-size: 32px;
+    right: 0;
+    position: initial;
+    top: 0;
+    vertical-align: top;
+    float: right
+}
+
+#tv-infobar-program-start,
+#tv-infobar-program-end {
+    font-size: 26px;
+    font-family: "Nunito", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    width: auto;
+    margin: 20px 0 0 0
+}
+
+#tv-infobar-program-progress {
+    margin-top: 30px;
+    right: 120px;
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 5px;
+    left: 122px
+}
+
+#player-tv-panel-menu {
+    padding: 0
+}
+
+#tv-infobar-program-progress div,
+#player-mode-program-progress div {
+    background-color: #fff;
+    opacity: 1
+}
+
+#player-mode-program-progress {
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 5px;
+    left: 122px;
+    right: 110px
+}
+
+#tv-infobar-channel-icon {
+    height: 40px;
+    float: inherit;
+    line-height: 40px;
+    margin: 0;
+    padding: 2px;
+    position: initial;
+    text-align: inherit;
+    width: 40px;
+    display: inline-block;
+    vertical-align: top
+}
+
+#tv-infobar-channel-info {
+    display: inline-block;
+    margin: 10px 0 0 15px;
+    width: 1115px
+}
+
+#tv-infobar-program-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: 10px 0 50px 0
+}
+
+#tv-infobar .screen-footer,
+#video-infobar .screen-footer {
+    bottom: -5px
+}
+
+#tv-infobar-channel-program {
+    width: 985px
+}
+
+.panel-menu div {
+    background-image: -moz-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -webkit-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -ms-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    opacity: .8;
+    padding: 0 20px;
+    text-transform: uppercase;
+    height: 44px;
+    line-height: 40px
+}
+
+.panel-menu.selected div.selected {
+    opacity: 1;
+    border: 0;
+    font-weight: bold
+}
+
+#pause-fullscreen-icon {
+    border-radius: 10px;
+    background-image: -moz-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -webkit-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -ms-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    opacity: .8;
+    width: 72px;
+    height: 112px;
+    margin: auto;
+    padding: 20px 40px;
+    left: 564px;
+    top: 136px
+}
+
+#seek-fullscreen-icon {
+    border-radius: 10px;
+    background-image: -moz-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -webkit-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -ms-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    opacity: .8;
+    width: 384px;
+    height: 153px
+}
+
+#text-bar {
+    border-radius: 10px;
+    background-image: -moz-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -webkit-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    background-image: -ms-linear-gradient(113deg, #1d003b 0, #3468a9 100%);
+    opacity: .8;
+    position: absolute;
+    left: 448px;
+    top: 136px;
+    height: 153px;
+    margin: 0;
+    padding: 0 30px;
+    color: #fff
+}
+
+#volume-bar {
+    background: transparent url(../img/impuls-x/volume-fullscreen-icon.png) 0 0 no-repeat;
+    color: #262865;
+    width: 37px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 50px;
+    padding: 0 0 0 40px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold
+}
+
+.tvarchive #tv-infobar-current-time {
+    color: #3eb5f1
+}
+
+.tvarchive #clock-icon {
+    background-image: url(../img/impuls-x/tvarchive-clock-icon.png)
+}
+
+.tvarchive #tv-infobar-program-progress div {
+    background-color: #fff
+}
+
+.tvarchive #tv-infobar-program-start,
+.tvarchive #tv-infobar-program-end {
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#video-infobar-thumbnail {
+    margin: 0;
+    width: 135px
+}
+
+#video-infobar-name,
+#video-infobar-current,
+#video-infobar-description {
+    margin-left: 145px
+}
+
+#video-infobar .screen-footer {
+    margin: 0
+}
+
+#video-infobar-name {
+    font-size: 34px;
+    font-family: "Nunito", sans-serif;
+    color: #fff
+}
+
+#video-infobar-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px
+}
+
+#video-infobar-current,
+#video-infobar-duration {
+    font-size: 26px;
+    font-family: "Nunito", sans-serif;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+#video-infobar-progress {
+    background-color: rgba(255, 255, 255, 0.3);
+    left: 260px;
+    width: 895px
+}
+
+#video-infobar-progress div {
+    background-color: #fff;
+    opacity: 1
+}
+
+#popup-list-screen .screen-container {
+    background-color: #003292;
+    border-radius: 10px;
+    opacity: .8;
+    width: 320px;
+    top: -7px;
+    padding: 20px
+}
+
+.popup-list div.selected .popup-list-menu-check-icon {
+    font-size: 26px;
+    font-weight: bold
+}
+
+.popup-list-menu-check-icon {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    height: 26px;
+    line-height: 40px;
+    background: 0;
+    padding: 0 0 0 10px
+}
+
+#popup-list-menu div {
+    height: 41px !important;
+    padding: 0 30px !important
+}
+
+.check-icon {
+    background-color: #fff;
+    border: 2px solid #a761c6 !important;
+    border-radius: 50%;
+    height: 20px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    opacity: .8;
+    width: 20px;
+    display: inline-block
+}
+
+#popup-parent-code-screen input.selected,
+#popup-parent-code-screen input:focus,
+#popup-promo-screen input.selected,
+#popup-promo-screen input:focus {
+    background: #fff;
+    border-radius: 30px;
+    border: 3px solid #a761c6;
+    color: #003292;
+    font-size: 30px;
+    margin-left: 90px;
+    opacity: 1;
+    padding: 0 20px;
+    width: 410px
+}
+
+#promo-activation-screen div#history-of-promo-codes-empty-screen {
+    margin-left: 90px
+}
+
+.mag250 #epg-categories-menu.selected li.selected,
+.mag250 #programs-menu.selected li.selected,
+.mag250 .screen-list li.selected,
+.mag250 .screen-list li:hover,
+.mag250 .genre-menu-check-icon.checked,
+.mag250 #epg-genres-menu div.selected .genre-menu-check-icon.checked,
+.mag250 .popup-list li.selected,
+.mag250 #genres-menu.selected li.selected,
+.mag250 #videos-menu.selected li.selected,
+.mag250 .button.selected,
+.mag250 .button.hover {
+    background: #a761c6 !important
+}
+
+.mag #channels-menu li,
+.mag #epg-categories-menu li,
+.mag #radiostations-menu li {
+    line-height: 57px !important
+}
+
+.mag #channels-menu li img {
+    margin-bottom: -12px;
+    margin-top: 6px
+}
+
+.tizen_tv #tv-infobar .screen-footer {
+    left: inherit
+}
+
+.tizen_tv #tv-infobar {
+    width: inherit;
+    left: 10px
+}
+
+.tizen_tv #epg-menu li {
+    width: 635px
+}
+
+.tvip #channels-menu li img {
+    margin-bottom: -12px;
+    margin-top: 6px
+}
+
+.provider-logo-megogo {
+    background: url("../img/impuls-x/provider-logo-megogo-list.png") no-repeat center
+}
+
+.provider-logo-start {
+    background: url("../img/impuls-x/provider-logo-start-list.png") no-repeat center
+}
+
+.provider-logo-tvzavr {
+    background: url("../img/impuls-x/provider-logo-tvzavr-list.png") no-repeat center
+}
+
+#video-provider-logo.provider-logo-megogo {
+    background: url("../img/impuls-x/provider-logo-megogo-description.png") no-repeat center
+}
+
+#video-provider-logo.provider-logo-start {
+    background: url("../img/impuls-x/provider-logo-start-description.png") no-repeat center
+}
+
+#video-provider-logo.provider-logo-tvzavr {
+    background: url("../img/impuls-x/provider-logo-tvzavr-description.png") no-repeat center
+}
+
+#channels-menu li img.locked,
+#notifications-menu li img.locked {
+    margin-left: -69px
+}
+
+#programs-menu li img.locked {
+    margin-left: -54px
+}
+
+#sort-channels-menu li img.locked {
+    margin-left: -59px
+}
+
+.overscan .screen .screen-footer {
+    bottom: 0;
+    height: 60px
+}
+
+.overscan .screen {
+    bottom: 0
+}
+
+.overscan .right-header {
+    padding-top: 45px
+}
+
+.overscan .screen-header,
+.overscan #epg-header,
+.overscan #epg-day-menu {
+    padding-top: 10px;
+    height: 70px
+}
+
+.overscan #tvchannels-clock,
+.overscan #categorizedtv-clock,
+.overscan #videocatalog-clock,
+.overscan #settings-clock,
+.overscan #radio-clock {
+    padding-top: 10px
+}
+
+.overscan #videocatalog-sort-header {
+    padding-top: 10px
+}
+
+.overscan #tv-infobar,
+.overscan #video-infobar {
+    bottom: 25px
+}
+
+.overscan #tv-infobar .screen-footer,
+.overscan #video-infobar .screen-footer {
+    bottom: -20px
+}
+
+.overscan #epg-info {
+    margin-top: 10px
+}
+
+.overscan #epg-menu li,
+.overscan #epg-selector div {
+    margin-bottom: 0
+}
+
+.overscan #account-menu,
+.overscan #settings-menu {
+    margin-top: 30px
+}
+
+#promo-activation-menu {
+    margin-top: 60px
+}
+
+#promo-activation-screen input {
+    margin-left: 70px
+}
+
+#history-of-promo-codes-menu {
+    margin-left: 76px
+}
+
+#history-of-promo-codes-menu li {
+    border-radius: 40px;
+    font-weight: normal !important
+}
+
+#history-of-promo-codes-menu li {
+    padding: 14px;
+    margin-bottom: 6px;
+    line-height: 24px;
+    height: 48px
+}
+
+#history-of-promo-codes-menu.selected li.selected {
+    font-weight: bold !important
+}
+
+#history-of-promo-codes-menu.screen-list.selected li.selected {
+    background: transparent;
+    padding: 11px
+}
+
+#promo-activation-screen p {
+    position: static
+}
+
+#promo-activation-button {
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 26px;
+    height: 50px;
+    line-height: 53px
+}
+
+#promo-activation-menu.selected li.selected #promo-activation-button {
+    height: 54px;
+    line-height: 57px
+}
+
+#promomenu1 {
+    top: 0
+}
+
+#promo-activation-screen p.label-promo-activation-help-text {
+    margin-left: 90px;
+    font-size: 19px
+}
+
+#promo-activation-screen div.label-history-of-promo-codes {
+    margin-left: 90px;
+    font-size: 25px;
+    font-weight: bold
+}
+
+#history-of-promo-codes-menu li .history-promo-code,
+#history-of-promo-codes-menu li .history-promo-date,
+#history-of-promo-codes-menu li .history-promo-comment {
+    font-size: 21px
+}

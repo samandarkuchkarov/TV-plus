@@ -1,0 +1,60 @@
+body:not(.horizontal).lg_webos .screen-footer .remote-button.menu,
+body:not(.horizontal).lg_webos .screen-footer .label-menu {
+    display: none
+}
+
+body.lg_webos #media {
+    transform: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0
+}
+
+body.lg_webos #media {
+    object-fit: fill;
+    -webkit-object-fit: fill
+}
+
+body.lg_webos.scale.w1920 {
+    transform: none;
+    -webkit-transform: none;
+    width: 100%;
+    height: 100%
+}
+
+body.lg_webos.scale.w1920 #page-container {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    width: 1280px;
+    height: 720px;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+body.player-scale.play {
+    background-image: none
+}
+
+body.player-scale.play #page-container {
+    background-image: url('../img/main/screen-bg-empty.png')
+}
+
+#logger-container {
+    z-index: 200
+}
+
+body.lg_webos #scaled-player {
+    background-color: #000
+}
+
+body.lg_webos #player-volume-icon {
+    display: none
+}

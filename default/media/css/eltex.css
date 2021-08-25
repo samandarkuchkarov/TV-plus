@@ -1,0 +1,65 @@
+.eltex object {
+    display: none
+}
+
+body.eltex.play {
+    background: #010101 !important
+}
+
+body.eltex {
+    font-family: sans-serif
+}
+
+.eltex #mainmenu div {
+    font-size: 30px
+}
+
+.eltex .screen .screen-footer {
+    font-size: 19px
+}
+
+.eltex .screen-header {
+    font-size: 22px
+}
+
+.eltex #channels-menu li,
+.eltex #epg-categories-menu li,
+.eltex #radiostations-menu li {
+    font-size: 30px
+}
+
+.eltex #tvepg-menu li,
+.eltex #programs-menu li,
+.eltex #epg-menu li,
+.eltex .show-info .info-suffix {
+    font-size: 28px
+}
+
+.eltex #tv-infobar-current-time {
+    font-size: 30px
+}
+
+.eltex #tv-infobar-channel-name,
+.eltex #tv-infobar-program-name {
+    font-size: 30px
+}
+
+.eltex #tv-infobar-program-description {
+    font-size: 12pt
+}
+
+.eltex #epg-info p {
+    font-size: 20px
+}
+
+.eltex #epg-day-menu {
+    font-size: 16pt
+}
+
+.eltex #epg-current-channel {
+    font-size: 26px
+}
+
+.eltex #info-menu li {
+    font-size: 26px
+}

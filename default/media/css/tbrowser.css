@@ -1,0 +1,4 @@
+body:not(.horizontal).tbrowser .screen-footer .remote-button.menu,
+body:not(.horizontal).tbrowser .screen-footer .label-menu {
+    display: none
+}

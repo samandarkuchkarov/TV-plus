@@ -1,0 +1,12 @@
+body.lg_netcast.play {
+    opacity: 1
+}
+
+body.lg_netcast .screen-footer .remote-button.menu,
+body.lg_netcast .screen-footer .label-menu {
+    display: none
+}
+
+body.lg_netcast #page-container {
+    font-family: Arial, sans-serif !important
+}

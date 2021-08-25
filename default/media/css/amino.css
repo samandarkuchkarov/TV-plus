@@ -1,0 +1,4 @@
+#login-menu li.selected input,
+#login-menu li.selected #login-button {
+    z-index: 10
+}

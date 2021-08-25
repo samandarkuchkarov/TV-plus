@@ -1,0 +1,1282 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="height=720, width=1280, user-scalable=no" />
+    <title></title>
+    <script language="javascript" x-skip="true" type="text/javascript" src="../../../client.js?v=1"></script>
+    <script type="text/javascript" src="$WEBAPIS/webapis/webapis.js"></script>
+    <script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/TVKeyValue.js'></script>
+    <script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/Widget.js'></script>
+    <script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/API/Plugin.js'></script>
+    <script type='text/javascript' language='javascript' src='$MANAGER_WIDGET/Common/Plugin/Define.js'></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/device.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/helper.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/logger.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/menu.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/display.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/screen.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/application.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/settings.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/lang.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/data.js?v=1"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/player.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/windycast.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/telemeters/mediascope.js">
+    </script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/telemeters/tvzavr.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/telemeters/monitoring.js">
+    </script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/telemeters/directad.js"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/hbbtv/hbbtv.js?v=2"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/hbbtv/providers/teletarget.js">
+    </script>
+    <script language="javascript" type="text/javascript"
+        src="../../../media/js/engine/hbbtv/providers/getshoptv.js?v=6"></script>
+    <script language="javascript" type="text/javascript" src="../../../media/js/engine/app.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/settings.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/lang.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/player.js?v=2"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/firstloading.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/login.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/mainmenu.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/player.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/tvchannels.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/categorizedtv.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/notifications.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/epg.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/videocatalog.screen.js?v=15"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/video.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/account.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/settings.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/info.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/serviceinfo.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/legaldocument.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/balance.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/payment.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/historyofpayments.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupmessage.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupgenres.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupparentcode.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popuppromo.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popuplist.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupinactive.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupinactivepvr.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupkeypanel.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/popupmenu.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/keyboard.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/signup.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/sort.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/radio.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/promoactivation.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/apps.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/games.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/gamesrecords.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/screens/games/battlecity.screen.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/app.js"></script>
+    <script language="javascript" type="text/javascript" src="media/js/init.js"></script>
+    <link rel="stylesheet" href="media/css/main.css?v=29" type="text/css" />
+    <link rel="stylesheet" href="media/css/eltex.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/imaqliq.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/mag.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/tvip.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/lg_netcast.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/lg_webos.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/tbrowser.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/tizen_tv.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/android_stb.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/samsung_smart_tv.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/overscan.css?v=22" type="text/css" />
+    <link rel="stylesheet" href="media/css/amino.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/dune.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/vewd.css" type="text/css" />
+    <link rel="stylesheet" href="media/css/wrt.css" type="text/css" />
+</head>
+
+<body> <object id='av-player' type='application/avplayer' style="display:none; background-color: #000;"></object>
+    <object id="pluginObjectPlayer" border="0" classid="clsid:SAMSUNG-INFOLINK-PLAYER"></object> <object
+        id="pluginAudio" border="0" classid="clsid:SAMSUNG-INFOLINK-AUDIO"></object> <object id="pluginObjectTVMW"
+        border="0" classid="clsid:SAMSUNG-INFOLINK-TVMW"></object> <object id="pluginObjectTV" border="0"
+        classid="clsid:SAMSUNG-INFOLINK-TV"></object> <object id="pluginObjectNNavi" border="0"
+        classid="clsid:SAMSUNG-INFOLINK-NNAVI"></object> <object id="pluginScreen" border="0"
+        classid="clsid:SAMSUNG-INFOLINK-SCREEN"></object> <object id="pluginNetwork" border="0"
+        classid="clsid:SAMSUNG-INFOLINK-NETWORK"></object> <object type="application/x-netcast-info"
+        id="netcast-device-info" width="0" height="0"></object> <object type="application/x-dune-stb-api" id="duneapi"
+        width="0" height="0"></object>
+    <div id="page-container">
+        <div id="electron-player" style="height:100%;width:100%;display:none;"></div>
+        <div id="refresh" style="position:absolute;top:0;left:0;z-index:0;color:transparent;"></div>
+        <div id="logger-container" style="display:none;"></div>
+        <div class="screen" id="firstloading-screen" style="display:none;">
+            <div> <span id="firstloading-logo"> <img id="loading-logo" src="media/img/blank.png" /> </span><br /> <span
+                    id="firstloading-loader"></span> <span id="custom-loading-message"></span> </div>
+        </div>
+        <div class="screen popup" id="popup-parent-code-screen" style="display:none;">
+            <div class="screen-container">
+                <p class="label-parent-code-request-message">Введите ПИН-код:</p> <br /> <input type="password"
+                    id="parent-code-number" readonly="readonly" maxlength="16" class="selected"
+                    onclick="App.popupParentCodeScreen.key_right()" />
+                <div class="screen-footer mouse-enter-handler mouse-leave-handler" x-mouse-leave-param=""
+                    x-mouse-enter-param="">
+                    <div class="footer-button">
+                        <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                            class="label-continue">Продолжить</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                            class="label-clean">Стереть</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-back">Назад</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen popup" id="popup-promo-screen" style="display:none;">
+            <div class="screen-container">
+                <p class="label-promo-request-message">Введите промокод для активации:</p> <br /> <input type="text"
+                    id="promo-number" readonly="readonly" maxlength="16" class="selected"
+                    onclick="App.popupPromoScreen.key_right()" />
+                <div class="screen-footer mouse-enter-handler mouse-leave-handler" x-mouse-leave-param=""
+                    x-mouse-enter-param="">
+                    <div class="footer-button">
+                        <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                            class="label-continue">Продолжить</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                            class="label-clean">Стереть</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-back">Назад</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen popup" id="popup-message-screen" style="display:none;">
+            <div class="screen-container">
+                <p id="popup-message"></p>
+                <div class="screen-footer mouse-enter-handler mouse-leave-handler" id="popup-message-close-footer"
+                    x-mouse-enter-param="" x-mouse-leave-param="">
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-close">Закрыть</span>
+                    </div>
+                </div>
+                <div class="screen-footer mouse-enter-handler mouse-leave-handler" id="popup-message-choice-footer"
+                    style="display: none" x-mouse-enter-param="" x-mouse-leave-param="">
+                    <div class="footer-button">
+                        <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                            class="label-agree">Да</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-refuse">Heт</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen popup" id="popup-inactive-screen" style="display:none;">
+            <div class="screen-container">
+                <p> <span id="popup-inactive-warning"></span> <span id="popup-inactive-time"></span>
+                    <p id="popup-inactive-message"></p>
+                </p>
+            </div>
+        </div>
+        <div class="screen popup" id="popup-inactive-pvr-screen" style="display:none;">
+            <div class="screen-container">
+                <p> <span id="popup-inactive-pvr-warning"></span> <span id="popup-inactive-pvr-time"></span>
+                    <p id="popup-inactive-pvr-message"></p>
+                </p>
+            </div>
+        </div>
+        <div class="screen popup transparent" id="popup-genres-screen" style="display: none">
+            <div class="screen-container">
+                <div id="popup-genres-empty-category" class="label-empty-genres-category" style="display: none;">Нет
+                    жанров для данной категории.</div>
+                <div class="popup-list" id="epg-genres-menu">
+                    <div id="epg-genre0"></div>
+                </div>
+                <div class="screen-footer mouse-enter-handler mouse-leave-handler" x-mouse-enter-param=""
+                    x-mouse-leave-param="">
+                    <div class="footer-button">
+                        <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                            class="label-choice">Выбор</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                            class="label-show-all-genres">Показать все жанры</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-close">Закрыть</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen popup" id="popup-keyboard-screen" style="display: none">
+            <div class="screen-container-keyboard" id="keyboard-screen"> <input id="keyboard-result" size="41" readonly
+                    onmousedown="return false">
+                <ul class="keyboard-menu">
+                    <li class="k1" id="key0" x-index="0">1</li>
+                    <li class="k1" id="key1" x-index="1">2</li>
+                    <li class="k1" id="key2" x-index="2">3</li>
+                    <li class="k1" id="key3" x-index="3">4</li>
+                    <li class="k1" id="key4" x-index="4">5</li>
+                    <li class="k1" id="key5" x-index="5">6</li>
+                    <li class="k1" id="key6" x-index="6">7</li>
+                    <li class="k1" id="key7" x-index="7">8</li>
+                    <li class="k1" id="key8" x-index="8">9</li>
+                    <li class="k1" id="key9" x-index="9">0</li>
+                    <li class="k2" id="key10" x-index="10">←</li>
+                </ul>
+                <ul class="keyboard-menu1">
+                    <li class="k1" id="one-key0" x-index="0">en</li>
+                    <li class="k1" id="one-key1" x-index="1">й</li>
+                    <li class="k1" id="one-key2" x-index="2">ц</li>
+                    <li class="k1" id="one-key3" x-index="3">у</li>
+                    <li class="k1" id="one-key4" x-index="4">к</li>
+                    <li class="k1" id="one-key5" x-index="5">е</li>
+                    <li class="k1" id="one-key6" x-index="6">н</li>
+                    <li class="k1" id="one-key7" x-index="7">г</li>
+                    <li class="k1" id="one-key8" x-index="8">ш</li>
+                    <li class="k1" id="one-key9" x-index="9">щ</li>
+                    <li class="k1" id="one-key10" x-index="10">з</li>
+                </ul>
+                <ul class="keyboard-menu2">
+                    <li class="k1" id="two-key0" x-index="0">#+</li>
+                    <li class="k1" id="two-key1" x-index="1">ф</li>
+                    <li class="k1" id="two-key2" x-index="2">ы</li>
+                    <li class="k1" id="two-key3" x-index="3">в</li>
+                    <li class="k1" id="two-key4" x-index="4">а</li>
+                    <li class="k1" id="two-key5" x-index="5">п</li>
+                    <li class="k1" id="two-key6" x-index="6">р</li>
+                    <li class="k1" id="two-key7" x-index="7">о</li>
+                    <li class="k1" id="two-key8" x-index="8">л</li>
+                    <li class="k1" id="two-key9" x-index="9">д</li>
+                    <li class="k1" id="two-key10" x-index="10">ж</li>
+                </ul>
+                <ul class="keyboard-menu3">
+                    <li class="k1" id="three-key0" x-index="0">↑</li>
+                    <li class="k1" id="three-key1" x-index="1">я</li>
+                    <li class="k1" id="three-key2" x-index="2">ч</li>
+                    <li class="k1" id="three-key3" x-index="3">с</li>
+                    <li class="k1" id="three-key4" x-index="4">м</li>
+                    <li class="k1" id="three-key5" x-index="5">и</li>
+                    <li class="k1" id="three-key6" x-index="6">т</li>
+                    <li class="k1" id="three-key7" x-index="7">б</li>
+                    <li class="k1" id="three-key8" x-index="8">э</li>
+                    <li class="k1" id="three-key9" x-index="9">ъ</li>
+                    <li class="k1" id="three-key10" x-index="10">ю</li>
+                </ul>
+                <ul class="keyboard-menu4">
+                    <li class="k4" id="four-key0" x-index="0">OK</li>
+                </ul>
+                <ul class="keyboard-menu5">
+                    <li class="k1" id="five-key0" x-index="0">х</li>
+                    <li class="k1" id="five-key1" x-index="1">ь</li>
+                    <li class="k5" id="five-key2" x-index="2">Пробел</li>
+                    <li class="k1" id="five-key3" x-index="3">-</li>
+                    <li class="k1" id="five-key4" x-index="4">&sub;</li>
+                    <li class="k1" id="five-key5" x-index="5">&sup;</li>
+                </ul>
+            </div>
+        </div>
+        <div class="screen popup transparent" id="popup-list-screen" style="display: none">
+            <div class="screen-container" id="popup-list-container">
+                <div class="popup-list" id="popup-list-menu">
+                    <div id="popup-list0"></div>
+                </div>
+            </div>
+        </div>
+        <div class="screen popup" id="popup-menu-screen" style="display:none;">
+            <div class="screen-container">
+                <div class="scroll-arrow-up"></div>
+                <ul id="popup-menu-screen-menu" class="popup-list"></ul>
+                <div class="scroll-arrow-down"></div>
+                <div class="screen-footer mouse-enter-handler mouse-leave-handler" x-mouse-leave-param=""
+                    x-mouse-enter-param="">
+                    <div class="footer-button">
+                        <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                            class="label-continue">Продолжить</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-cancel">Отмена</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="screen popup transparent" id="popup-key-panel-screen" style="display: none">
+            <div class="screen-container" id="popup-key-panel-container">
+                <div class="popup-list" id="key-panel-menu">
+                    <div id="panel-key0"></div>
+                </div>
+            </div>
+        </div>
+        <div id="volume-bar" style="display:none;"></div>
+        <div class="screen info key-handler" x-key-handler="info" id="player-screen" style="display:none;">
+            <div id="pause-fullscreen-icon" style="display:none;"></div>
+            <div id="seek-fullscreen-icon" style="display:none;"></div>
+            <div id="loading-bar" style="display:none;"></div>
+            <div id="tv-infobar" style="display:none;">
+                <div id="player-tv-panel-menu" class="panel-menu" style="display: none;"></div> <img
+                    id="tv-infobar-channel-icon" />
+                <div id="tv-infobar-channel-info"> <span id="tv-infobar-channel-program"> <span
+                            id="tv-infobar-channel-name"></span> <span id="tv-infobar-program-name"></span> </span>
+                    <div id="clock-icon"></div> <span id="tv-infobar-current-time"></span>
+                </div>
+                <div class="clearfix"></div> <span id="tv-infobar-program-start"></span>
+                <div id="tv-infobar-program-progress">
+                    <div id="tv-infobar-program-progress-bar" style="width:0%;"></div>
+                </div> <span id="tv-infobar-program-end"></span>
+                <div class="clearfix"></div>
+                <p id="tv-infobar-program-description"></p>
+                <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer"> <span
+                        id="tv-infobar-footer-livetv">
+                        <div class="footer-button menu-button">
+                            <div class="remote-button menu key-handler" x-key-handler="menu"></div> <span
+                                class="label-menu">Меню</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button info key-handler" x-key-handler="info"></div> <span
+                                class="label-hide-infobar">Скрыть</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button red key-handler" x-key-handler="red"></div> <span
+                                class="label-program">Программа</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button blue key-handler" x-key-handler="blue"></div> <span
+                                class="label-add-to-favorite">+/- Избранное</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button back key-handler" x-key-handler="back_mouse"></div> <span
+                                class="label-back">Назад</span>
+                        </div>
+                    </span> <span id="tv-infobar-footer-tvarchive">
+                        <div class="footer-button menu-button">
+                            <div class="remote-button menu key-handler" x-key-handler="menu"></div> <span
+                                class="label-menu">Меню</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button info key-handler" x-key-handler="info"></div> <span
+                                class="label-hide-infobar">Скрыть</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button red key-handler" x-key-handler="red"></div> <span
+                                class="label-program">Программа</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button rew key-handler" x-key-handler="rew"></div>
+                            <div class="remote-button fwd stick key-handler" x-key-handler="fwd"></div>
+                            <div class="remote-button pause stick key-handler" x-key-handler="pause"></div>
+                            <div class="remote-button stop stick key-handler" x-key-handler="stop"></div> <span
+                                class="label-player-control">Управление плеером</span>
+                        </div>
+                        <div class="footer-button">
+                            <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                                class="label-back">Назад</span>
+                        </div>
+                    </span> </div>
+            </div>
+            <div id="video-infobar" style="display:none;">
+                <div id="player-video-panel-menu" class="panel-menu" style="display: none;"></div>
+                <div id="video-infobar-thumbnail"></div> <span id="video-infobar-name"></span>
+                <div class="clearfix"></div> <span id="video-infobar-current"></span>
+                <div id="video-infobar-progress">
+                    <div id="video-infobar-progress-bar" style="width:0%;"></div>
+                </div> <span id="video-infobar-duration"></span>
+                <div class="clearfix"></div>
+                <p id="video-infobar-description"></p>
+                <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                    <div class="footer-button menu-button">
+                        <div class="remote-button menu"></div> <span class="label-menu">Меню</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button rew key-handler" x-key-handler="rew"></div>
+                        <div class="remote-button fwd stick key-handler" x-key-handler="fwd"></div>
+                        <div class="remote-button pause stick key-handler" x-key-handler="pause"></div>
+                        <div class="remote-button stop stick key-handler" x-key-handler="stop"></div> <span
+                            class="label-player-control">Управление плеером</span>
+                    </div>
+                    <div class="footer-button">
+                        <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                            class="label-back">Назад</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-bar" style="display:none;"></div>
+        <div class="screen" id="login-screen" style="display:none;">
+            <div class="screen-container" id="login-screen-container">
+                <div class="logo"> <img class="client-logo" src="media/img/main/operator-logo-big.png" /> </div>
+                <div id="login-header" class="screen-header label-login-in-system"></div>
+                <ul id="login-menu">
+                    <li id="loginmenu0" x-index="0"> <label for="login-abonement"
+                            class="label-abonement">Абонемент:</label> <input type="text" id="login-abonement"
+                            readonly="readonly" onmousedown="return false" /> </li>
+                    <li id="loginmenu1" x-index="1"> <label for="login-password" class="label-password">Пароль:</label>
+                        <input type="password" id="login-password" readonly="readonly" onmousedown="return false" />
+                    </li>
+                    <li id="loginmenu2" x-index="2">
+                        <p id="custom-login-text"></p>
+                        <div id="login-button" class="label-login button">ВОЙТИ</div>
+                    </li>
+                </ul> <br /><br />
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                        class="label-clean">Стереть</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button right key-handler" x-key-handler="right"></div> <span
+                        class="label-keyboard">Клавиатура</span>
+                </div>
+                <div class="footer-button"> <span id="login-registration-icon">
+                        <div class="remote-button red key-handler" x-key-handler="red"></div> <span
+                            class="label-signup">Регистрация</span>
+                    </span> </div>
+            </div>
+        </div>
+        <div class="screen" id="signup-screen" style="display:none;">
+            <div class="screen-container" id="signup-screen-container">
+                <div class="logo"> <img class="client-logo" src="media/img/main/operator-logo-big.png" /> </div>
+                <div class="screen-header label-signup">Регистрация</div>
+                <p class="label-signup-message"> Для регистрации введите номер своего мобильного телефона: </p> <br />
+                <input type="text" id="signup-phone-number" class="selected key-handler" x-key-handler="right"
+                    readonly="readonly" maxlength="32" onmousedown="return false" /> <br />
+                <p class="label-signup-help-text"> На данный телефонный номер будет отправлено СМС сообщение с Вашим
+                    абонементом и паролем. </p>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-continue">Продолжить</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                        class="label-clean">Стереть</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button right key-handler" x-key-handler="right"></div> <span
+                        class="label-keyboard">Клавиатура</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="mainmenu-screen" style="display:none;">
+            <div class="screen-container">
+                <div id="mainmenu-selector-menu" class="selector-menu">
+                    <div id="mainmenu-selector" class="selector">
+                        <div id="mainmenu-selector0"></div>
+                        <div id="mainmenu-selector1"></div>
+                        <div id="mainmenu-selector2"></div>
+                        <div id="mainmenu-selector3"></div>
+                        <div id="mainmenu-selector4"></div>
+                        <div class="menu-selection" style="display:none;" id="mainmenu-selector-selection"></div>
+                    </div>
+                </div>
+                <div class="logo"> <img class="client-logo" src="media/img/main/operator-logo-big.png" /> </div>
+                <div class="screen-list" id="mainmenu"></div>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-open">Открыть меню</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="apps-screen" style="display:none;">
+            <div class="screen-container">
+                <div id="appsmenu-selector-menu" class="selector-menu">
+                    <div id="appsmenu-selector" class="selector">
+                        <div id="appsmenu-selector0"></div>
+                        <div id="appsmenu-selector1"></div>
+                        <div id="appsmenu-selector2"></div>
+                        <div id="appsmenu-selector3"></div>
+                        <div id="appsmenu-selector4"></div>
+                        <div class="menu-selection" style="display:none;" id="appsmenu-selector-selection"></div>
+                    </div>
+                </div>
+                <div class="logo"> <img class="client-logo" src="media/img/main/operator-logo-big.png" /> </div>
+                <div class="screen-header label-mainmenu-apps">Приложения</div>
+                <div class="screen-list" id="appsmenu"></div>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-run-app">Открыть</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen list" id="tvchannels-screen" style="display:none;">
+            <div class="screen-container" id="tvchannels-screen-container">
+                <div id="tvchannels-selector-menu" class="selector-menu">
+                    <div id="tvchannels-selector" class="selector"></div>
+                </div>
+                <div id="tvchannels-header" class="screen-header"> <span
+                        class="current-section label-mainmenu-tvchannels">ТЕЛЕКАНАЛЫ</span>
+                    <div class="right-header"> <span id="tvchannels-header-category" class="label-category">Категория:
+                        </span> <span id="current-category"></span> </div>
+                </div>
+                <div id="tvchannels-clock" style="display:none;" class="screen-clock"></div>
+                <ul id="categories-menu" class="">
+                    <li id="category0"></li>
+                </ul>
+                <div class="navigation-left key-handler" x-key-handler="left"> <img
+                        src="media/img/main/navigation-left.png" x-key-handler="left">
+                    <div></div>
+                </div>
+                <div class="navigation-right key-handler" x-key-handler="right"> <img
+                        src="media/img/main/navigation-right.png" x-key-handler="right">
+                    <div></div>
+                </div>
+                <div id="tvchannels-empty-screen" style="display: none;"></div>
+                <ul class="screen-list" id="channels-menu">
+                    <li id="channel0"></li>
+                </ul>
+                <ul id="tvepg-menu">
+                    <li id="tvepg0"></li>
+                </ul>
+                <div id="player-mode" style="display: none;">
+                    <div id="scaled-player">
+                        <div id="player-mode-icon"></div>
+                    </div> <span id="player-mode-info"> <span id="player-mode-channel-name"></span> <span
+                            id="player-mode-program-start"></span>
+                        <div id="player-mode-program-progress">
+                            <div id="player-mode-program-progress-bar" style="width:0%;"></div>
+                        </div> <span id="player-mode-program-end"></span> <span id="player-mode-description"></span>
+                    </span>
+                </div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-play">Просмотр</span>
+                </div>
+                <div class="footer-button menu-button">
+                    <div class="remote-button menu key-handler" x-key-handler="menu"></div>
+                    <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                        class="label-menu">Меню</span>
+                </div>
+                <div class="footer-button right-button">
+                    <div id="tvchannels-footer-right" class="remote-button right key-handler" x-key-handler="right">
+                    </div> <span class="label-program">Программа</span>
+                </div>
+                <div class="footer-button red-button">
+                    <div class="remote-button red key-handler" x-key-handler="red" id="tvchannels-footer-red"></div>
+                    <span class="label-program">Программа</span> <span class="label-player">Плеер</span> <span
+                        class="label-list">Список</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button green key-handler" x-key-handler="green"></div> <span
+                        class="label-categories">Категории</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button blue key-handler" x-key-handler="blue"></div> <span
+                        class="label-add-to-favorite">+/- Избранное</span>
+                </div>
+                <div class="footer-button info-button">
+                    <div class="remote-button info key-handler" x-key-handler="info"></div> <span
+                        class="label-player">Плеер</span> <span class="label-list">Список</span> <span
+                        class="label-more">Подробнее</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="categorizedtv-screen" style="display:none;">
+            <div class="screen-container" id="categorizedtv-screen-container">
+                <div id="categorizedtv-selector-menu" class="selector-menu">
+                    <div id="categorizedtv-selector" class="selector">
+                        <div id="categorizedtv-selector0"></div>
+                    </div>
+                </div>
+                <div id="categorizedtv-header" class="screen-header"> <span
+                        class="current-section label-mainmenu-categorizedtv" id="categorizedtv-header-title">ТВ ПО
+                        ИНТЕРЕСАМ</span> </div>
+                <div id="categorizedtv-clock" style="display:none;" class="screen-clock"></div>
+                <div id="categorizedtv-genres-header" class="right-header"> <span class="label-genres">Жанры: </span>
+                    <span id="categorizedtv-genres"></span> </div>
+                <div class="navigation-left key-handler" x-key-handler="left"> <img
+                        src="media/img/main/navigation-left.png" x-key-handler="left">
+                    <div></div>
+                </div>
+                <div class="navigation-right key-handler" x-key-handler="right"> <img
+                        src="media/img/main/navigation-right.png" x-key-handler="right">
+                    <div></div>
+                </div>
+                <div id="categorizedtv-empty-screen" class="label-empty-epg-categories-list" style="display: none;">
+                    Список категорий телеканалов пуст, ожидание наполнения EPG.</div>
+                <ul id="epg-categories-menu" class="">
+                    <li id="epg-category0"></li>
+                </ul>
+                <div id="categorizedtv-empty-category" class="label-empty-category-message" style="display: none;">В
+                    эфире нет передач данной категории и жанров.</div>
+                <ul id="programs-menu">
+                    <li id="program0"></li>
+                </ul>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-play">Просмотр</span>
+                </div>
+                <div class="footer-button menu-button">
+                    <div id="categorizedtv-footer-menu" class="remote-button menu key-handler" x-key-handler="menu">
+                    </div>
+                    <div id="categorizedtv-footer-left" class="remote-button stick left key-handler"
+                        x-key-handler="left"></div> <span class="label-menu">Меню</span>
+                </div>
+                <div class="footer-button red-button">
+                    <div class="remote-button red key-handler" x-key-handler="red" id="categorizedtv-epg-button"></div>
+                    <span class="label-program">Программа</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button green key-handler" x-key-handler="green"></div> <span
+                        class="label-choice-genre">Выбор жанра</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                        class="label-categorizedtv-mode-now" id="remote-categorizedtv-mode">Время: сейчас</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="notifications-screen" style="display:none;">
+            <div class="screen-container" id="notifications-screen-container">
+                <div id="notifications-header" class="screen-header"> <span
+                        class="current-section label-account-notifications">МОЁ РАСПИСАНИЕ</span> </div>
+                <div id="notifications-clock" class="screen-clock"></div>
+                <div id="notifications-empty-category" class="label-empty-notifications-list" style="display: none;">
+                    Список напоминаний пуст.</div>
+                <ul class="screen-list" id="notifications-menu">
+                    <li id="notification0"></li>
+                </ul>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-play">Просмотр</span>
+                </div>
+                <div class="footer-button" id="delete-notification-button">
+                    <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                        class="label-delete-notification">Удалить напоминание</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="epg-screen" style="display:none;">
+            <div class="screen-container" id="epg-screen-container">
+                <div id="epg-selector-menu" class="selector-menu">
+                    <div id="epg-selector" class="selector">
+                        <div id="epg-selector0"></div>
+                    </div>
+                </div>
+                <div id="epg-header" class="screen-header"> <span class="current-section label-epg">ПРОГРАММА
+                        ПЕРЕДАЧ</span>
+                    <div id="epg-current-channel"> </div>
+                </div>
+                <div id="epg-day-menu">
+                    <div class="remote-button left key-handler" x-key-handler="ch_minus"></div> <span
+                        id="epg-day-menu-today"></span>
+                    <div class="remote-button right key-handler" x-key-handler="ch_plus"></div>
+                </div>
+                <div class="navigation-left key-handler" x-key-handler="left"> <img
+                        src="media/img/main/navigation-left.png" x-key-handler="left">
+                    <div></div>
+                </div>
+                <div id="empty-epg" class="label-empty-epg" style="display: none;">Извините, программа передач для
+                    данного телеканала отсутствует.</div>
+                <ul class="screen-list" id="epg-menu">
+                    <li id="epg0"></li>
+                </ul>
+                <div id="epg-menu-scroll-down"></div>
+                <div id="epg-info">
+                    <p id="epg-channel-program-description" style="display: none;"></p>
+                </div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                        id="epg-parent-screen"></span>
+                    <div id="epg-screen-footer-right" class="remote-button right stick key-handler"
+                        x-key-handler="right"></div>
+                    <div class="remote-button key-handler ch_plus_minus" x-key-handler="ch_plus"></div> <span
+                        class="label-choice-weekday">День недели</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-play">Просмотр</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button green key-handler" x-key-handler="green"></div> <span
+                        class="label-scroll-description">Описание передачи</span>
+                </div>
+                <div class="footer-button" id="epg-remind-button" style="display: none">
+                    <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                        class="label-remind" id="epg-label-remind">Напомнить</span> <span class="label-no-remind"
+                        id="epg-label-no-remind">Не напоминать</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="settings-screen" style="display:none;">
+            <div class="screen-container" id="settings-screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-settings">Настройки</div>
+                <div id="settings-clock" class="screen-clock"></div>
+                <ul class="screen-list" id="settings-menu">
+                    <li id="settings0"></li>
+                </ul>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div>
+                    <div class="remote-button right stick key-handler" x-key-handler="right"></div> <span
+                        class="label-choice">Выбор</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="sort-screen" style="display:none;">
+            <div class="screen-container" id="sort-screen-container">
+                <div class="screen-loader"></div>
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-settings-channels-sort">Сортировка каналов</div>
+                <div id="sort-menu-table">
+                    <ul id="sort-channels-menu" class="channel-list screen-list">
+                        <li id="sort-channel0" class="selected"></li>
+                    </ul>
+                    <ul id="move-down-menu" class="sort-list screen-list">
+                        <li id="move-down0" class="selected"></li>
+                    </ul>
+                    <ul id="move-up-menu" class="sort-list screen-list">
+                        <li id="move-up0" class="selected"></li>
+                    </ul>
+                    <ul id="hide-menu" class="sort-list screen-list">
+                        <li id="hide0" class="selected"></li>
+                    </ul>
+                    <ul id="parent-menu" class="sort-list screen-list">
+                        <li id="parent0" class="selected"></li>
+                    </ul>
+                </div>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span class="label-move"
+                        id="sort-screen-remote-button-ok">Передвинуть</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                        class="label-reset">Сброс</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="account-screen" style="display:none;">
+            <div class="screen-container" id="account-screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div id="account-header" class="screen-header label-mainmenu-account">Мой профиль</div>
+                <ul class="screen-list" id="account-menu">
+                    <li id="account-menu-item0"></li>
+                </ul>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="balance-screen" style="display:none;">
+            <div class="screen-container" id="balance-screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-account-balance">Состояние счета</div>
+                <ul id="balance-menu">
+                    <li id="balance0">
+                        <div class="key label-balance-chit">Состояние счета:</div>
+                        <div class="value" id="balance-chit"></div>
+                    </li>
+                    <li id="balance1">
+                        <div class="key label-balance-debt">Задолженность:</div>
+                        <div class="value" id="balance-debt"></div>
+                    </li>
+                    <li id="balance2">
+                        <div class="key label-balance-payment">Ежемесячный платеж:</div>
+                        <div class="value" id="balance-payment"></div>
+                    </li>
+                    <li id="balance3" class="balance-rates">
+                        <div class="key label-basic-tariff">Основной тариф:</div>
+                    </li>
+                    <li id="balance4" style="height: auto">
+                        <div id="basic-tariffs"></div>
+                        <div id="tariffs-nav-right"></div>
+                    </li>
+                    <li id="balance5" class="additional-tariffs-header">
+                        <div class="key label-additional-packets">Дополнительные пакеты:</div>
+                    </li>
+                    <li id="balance6" style="height: auto">
+                        <div id="tariffs"></div>
+                        <div id="tariffs-nav-down">
+                    </li>
+                </ul>
+                <div id="tariff-description"></div>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        id="balance-connect-footer-label" class="label-connect">Подключить</span>
+                </div>
+                <div class="footer-button" id="balance-offer-footer-button" style="display:none;">
+                    <div class="remote-button red key-handler" x-key-handler="red"></div> <span
+                        class="label-offer">Пользовательское соглашение</span>
+                </div>
+                <div class="footer-button" id="balance-pay-footer-button" style="display:none;">
+                    <div class="remote-button green key-handler" x-key-handler="green"></div> <span
+                        class="label-payment">Оплата</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                        class="label-history-of-payments">История платежей</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="payment-screen" style="display:none;">
+            <div class="screen-container" id="payment-screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-payment">Оплата</div>
+                <div class="label-note label-payment-description-message"></div>
+                <div id="payment-form-container">
+                    <div id="card-front">
+                        <div id="shadow"></div>
+                        <div id="card-input0" x-index="0" class="card-input"> <span class="label-to-pay"></span> <input
+                                type="text" id="amount-value" maxlength="4" size="4" onmousedown="return false" /> <span
+                                id="payment-form-currency"></span> <span id="card-image"><img
+                                    src="media/img/main/visa-mastercard-icon.png"></span> </div>
+                        <div id="card-input1" class="card-input" x-index="1"> <label for="card-number"
+                                class="label-card-number"></label> <input type="text" id="card-number" length="20"
+                                onmousedown="return false"> </div>
+                        <div id="card-input2" class="card-input" x-index="2"> <label for="card-holder"
+                                class="label-cardholder"></label> <input type="text" class="card-input" id="card-holder"
+                                maxlength="20" onmousedown="return false" /> </div>
+                        <div id="exp-container"> <label for="card-input3" class="label-expiration"></label>
+                            <div id="card-input3" x-index="3"></div>
+                            <div id="card-input4" x-index="4"></div>
+                        </div>
+                        <div id="card-input5" class="card-input" x-index="5"> <label for="card-cvc"> CVC/CVV</label>
+                            <input id="card-cvc" type="text" length="3" onmousedown="return false"> </div>
+                    </div>
+                    <div id="card-back">
+                        <div id="card-stripe"></div>
+                    </div>
+                    <div class="label-payment-button button" id="card-input6" x-index="6">Оплатить</div>
+                </div>
+            </div>
+            <div id="payment-footer" class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button clean-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                        class="label-clean">Стереть</span>
+                </div>
+                <div class="footer-button navigation-button">
+                    <div class="remote-button up key-handler" x-key-handler="up"></div>
+                    <div class="remote-button down key-handler stick" x-key-handler="down"></div>
+                    <div class="remote-button left key-handler stick" x-key-handler="left"></div>
+                    <div class="remote-button right key-handler stick" x-key-handler="right"></div> <span
+                        class="label-choice-input">Выбор поля ввода</span>
+                </div>
+                <div class="footer-button enter-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-keyboard">Клавиатура</span> <span class="label-choice-date">Выбор даты</span> <span
+                        class="label-pay">Оплатить</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="history-of-payments-screen" style="display:none;">
+            <div class="screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-history-of-payments">История платежей</div>
+                <div id="history-of-payments-empty-screen" class="label-empty-payments-list" style="display: none;">Вы
+                    пока не совершили ни одного платежа.</div>
+                <div id="history-of-payments-menu-header" style="display: none;">
+                    <div class="label-history-comment">Комментарий</div>
+                    <div id="label-history-info">
+                        <div class="label-history-amount">Сумма</div>
+                        <div class="label-history-date">Дата</div>
+                    </div>
+                </div>
+                <ul id="history-of-payments-menu" class="screen-list">
+                    <li id="history0" style="height: 44px"></li>
+                </ul>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="service-info-screen" style="display:none;">
+            <div class="screen-container" id="service-info-screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-account-service-info">О сервисе</div>
+                <div id="service-info"></div>
+                <div id="documents-menu"></div>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="legal-document-screen" style="display:none;">
+            <div class="screen-container" id="legal-document-screen-container">
+                <div class="screen-header" id="legal-document-header"></div>
+                <div id="legal-document-accepted-header" class="right-header" style="display: none"> </div>
+                <div id="legal-document-content"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button" id="legal-document-accept-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-accept">Принять</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="info-screen" style="display:none;">
+            <div class="screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div class="screen-header label-account-info">Информация</div>
+                <ul id="info-menu" class="screen-list"></ul>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button" style="display: none" id="show-password-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-show-password">Показать пароль</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button right key-handler" x-key-handler="right"></div> <span
+                        class="label-more">Подробнее</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="games-screen" style="display:none;">
+            <div class="screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div id="games-selector-menu" class="selector-menu">
+                    <div id="games-selector" class="selector">
+                        <div id="games-selector0"></div>
+                    </div>
+                </div>
+                <div class="screen-header label-games">Игры</div>
+                <div id="games-empty-list" class="label-empty-screen" style="display: none;">Извините, данный раздел
+                    находится в процессе наполнения.</div>
+                <ul class="screen-list" id="games-menu"></ul>
+                <div id="games-total" style="display: none;"><span id="label-games-total">ВСЕГО: </span><span
+                        id="games-total-score"></span></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-games-play">Играть</span>
+                </div>
+                <div class="footer-button menu-button">
+                    <div class="remote-button menu key-handler" x-key-handler="menu"></div> <span
+                        class="label-menu">Меню</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button yellow key-handler" x-key-handler="yellow"></div> <span
+                        class="label-games-records">Таблица рекордов</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="games-records-screen" style="display:none;">
+            <div class="screen-container">
+                <div class="logo"><img class="client-logo" src="media/img/main/operator-logo-big.png" /></div>
+                <div id="games-records-header" class="screen-header"> <span
+                        class="current-section label-games-records">Таблица рекордов</span>
+                    <div> <span id="games-records-header-game" class="label-game">Игра: </span> <span
+                            id="current-game"></span> </div>
+                </div>
+                <div id="games-records-empty-list" class="label-games-records-empty-list" style="display: none;">У Вас
+                    еще нет очков в играх.</div>
+                <div id="games-records-menu-header">
+                    <div class="label-games-position">Место</div>
+                    <div class="label-games-account">Абонент</div>
+                    <div class="label-games-score">Очки</div>
+                </div>
+                <ul id="games-records-menu"></ul>
+                <div id="games-records-comment"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="game-screen" id="games-battle_city-screen" style="display: none;">
+            <div class="screen-container"> <canvas class="game-canvas" id="canvas0" width="500" height="500"
+                    style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas> <canvas class="game-canvas"
+                    id="canvas" width="700" height="500"
+                    style="position: absolute; left: 0; top: 0; z-index: 0;"></canvas> <canvas class="game-canvas"
+                    id="canvas1" width="500" height="500"
+                    style="position: absolute; left: 0; top: 0; z-index: 2;"></canvas> <canvas class="game-canvas"
+                    id="canvas2" width="700" height="500"
+                    style="position: absolute; left: 0; top: 0; z-index: 4;"></canvas> <canvas class="game-canvas"
+                    id="canvas3" width="500" height="500"
+                    style="position: absolute; left: 0; top: 0; z-index: 3;"></canvas> <canvas class="game-canvas"
+                    id="canvas4" width="500" height="500"
+                    style="position: absolute; left: 0; top: 0; z-index: 5;"></canvas> </div>
+            <div class="screen-footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-battlecity-fire">Огонь</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div>
+                    <div class="remote-button stick right key-handler" x-key-handler="right"></div>
+                    <div class="remote-button up stick key-handler" x-key-handler="up"></div>
+                    <div class="remote-button stick down key-handler" x-key-handler="down"></div> <span
+                        class="label-battlecity-movement">Передвижение</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button pause key-handler" x-key-handler="pause"></div> <span
+                        class="label-battlecity-pause">Пауза</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-battlecity-fold">Свернуть</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="videocatalog-screen" style="display:none;">
+            <div id="videocatalog-screen-container" class="screen-container"> <input type="hidden" id="video-search" />
+                <div id="videocatalog-selector-menu" class="selector-menu">
+                    <div id="videocatalog-selector" class="selector">
+                        <div id="videocatalog-selector0"></div>
+                    </div>
+                </div>
+                <div id="videocatalog-screen-header" class="label-videocatalog screen-header">Кинотеатр</div>
+                <div id="videocatalog-clock" style="display:none;" class="screen-clock"></div>
+                <div id="videocatalog-sort-header" class="right-header"> <span
+                        class="label-videocatalog-sort">Сортировка: </span> <span id="videocatalog-sort"></span> </div>
+                <div class="navigation-left key-handler" x-key-handler="left"> <img
+                        src="media/img/main/navigation-left.png" x-key-handler="left">
+                    <div></div>
+                </div>
+                <div id="videocatalog-empty-list" class="label-empty-screen" style="display: none;">Извините, данный
+                    раздел находится в процессе наполнения.</div>
+                <ul id="genres-menu">
+                    <li id="genre0"></li>
+                </ul>
+                <div id="videocatalog-no-videos-in-category" class="label-empty-video-category" style="display: none;">
+                    Нет фильмов в данной категории.</div>
+                <ul id="videos-menu">
+                    <li id="video0"></li>
+                </ul>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-choice">Выбор</span>
+                </div>
+                <div class="footer-button menu-button">
+                    <div class="remote-button menu key-handler" x-key-handler="menu"></div> <span
+                        class="label-menu">Меню</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button green key-handler" x-key-handler="green"></div> <span
+                        class="label-search-and-sort">Поиск и сортировка</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="video-screen" style="display:none;">
+            <div class="screen-container">
+                <div id="video-screen-header" class="screen-header label-videocatalog">Кинотеатр</div>
+                <div class="navigation-left key-handler" x-key-handler="left"> <img
+                        src="media/img/main/navigation-left.png" x-key-handler="left">
+                    <div></div>
+                </div> <img id="video-cover" src="" />
+                <div id="video-provided-by">
+                    <div id="video-provider-logo"></div>
+                </div>
+                <div id="full-video-description">
+                    <h1 id="video-name">&nbsp;</h1> <strong id="origin-name"></strong><br /> <strong id="duration"><img
+                            src="media/img/main/video-clock-icon.png"> <span id="duration-time"></span> </strong> <br />
+                    <strong id="video-rating">&nbsp;</strong><br /> <strong class="label-genre">Жанр:</strong> <span
+                        id="video-genre">&nbsp;</span><br /> <strong class="label-year">Год:</strong> <span
+                        id="video-year">&nbsp;</span> <strong class="label-director">Режиссёр:</strong> <span
+                        id="video-director">&nbsp;</span> <strong class="label-actors">В ролях:</strong> <span
+                        id="video-actors">&nbsp;</span>
+                    <p id="video-description">&nbsp;</p>
+                </div>
+                <div id="video-actions-panel">
+                    <p class="label-video-assets-is-empty">Данный фильм пока недоступен для просмотра</p>
+                    <ul id="videoactions-menu">
+                        <li id="videoaction0"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-play">Просмотр</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="radio-screen" style="display:none;">
+            <div class="screen-container" id="radio-screen-container">
+                <div id="radio-selector-menu" class="selector-menu">
+                    <div id="radio-selector" class="selector">
+                        <div id="radio-selector0"></div>
+                    </div>
+                </div>
+                <div class="screen-header label-radiostations">Радио</div>
+                <div id="radio-clock" style="display:none;" class="screen-clock"></div>
+                <div class="right-header" id="radio-player" style="display:none"> <span id="radio-animation"></span>
+                    <span id="radiostation-name"></span> </div>
+                <div id="radio-empty-screen" class="label-empty-screen" style="display: none;"></div>
+                <ul class="screen-list" id="radiostations-menu">
+                    <li id="station0"></li>
+                </ul>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-listen">Слушать</span>
+                </div>
+                <div class="footer-button menu-button">
+                    <div class="remote-button menu key-handler" x-key-handler="menu"></div> <span
+                        class="label-menu">Меню</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div class="screen" id="promo-activation-screen" style="display:none;">
+            <div class="screen-container" id="promo-activation-screen-container">
+                <div class="logo"> <img class="client-logo" src="media/img/main/operator-logo-big.png" /> </div>
+                <div class="screen-header label-promo-activation">Активация промокода</div>
+                <ul id="promo-activation-menu">
+                    <li id="promomenu0" x-index="0"> <input type="text" id="promo-activation-code"
+                            class="selected key-handler" x-key-handler="enter" readonly="readonly" maxlength="32"
+                            onmousedown="return false" /> </li>
+                    <li id="promomenu1" x-index="1">
+                        <div id="promo-activation-button" class="label-promo-activation button">АКТИВИРОВАТЬ</div>
+                    </li>
+                </ul> <br />
+                <p class="label-promo-activation-help-text"> Введите промокод, чтобы активировать скидку или
+                    дополнительные бонусы </p>
+                <div class="label-history-of-promo-codes">Ранее активированные промокоды</div>
+                <div id="history-of-promo-codes-empty-screen" class="label-empty-payments-list" style="display: none;">
+                    Вы пока не активировали ни один промокод.</div>
+                <ul id="history-of-promo-codes-menu" class="screen-list">
+                    <li id="history-promo0" style="height: 44px"></li>
+                </ul>
+                <div class="client-site"></div>
+                <div class="client-support"></div>
+            </div>
+            <div class="screen-footer mouse-leave-handler" x-mouse-leave-param="footer">
+                <div class="footer-button">
+                    <div class="remote-button enter key-handler" x-key-handler="enter"></div> <span
+                        class="label-continue">Продолжить</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button left key-handler" x-key-handler="left"></div> <span
+                        class="label-clean">Стереть</span>
+                </div>
+                <div class="footer-button">
+                    <div class="remote-button back key-handler" x-key-handler="back"></div> <span
+                        class="label-back">Назад</span>
+                </div>
+            </div>
+        </div>
+        <div id="payment-3D-secure" style="display:none;"></div>
+        <div id="merchant-iframe-container" style="display:none;"></div>
+        <div id="hbb-iframe-container" style="display:none;"></div>
+    </div>
+</body>
+
+</html>

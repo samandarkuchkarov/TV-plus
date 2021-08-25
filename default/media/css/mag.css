@@ -1,0 +1,26 @@
+.mag object {
+    display: none
+}
+
+.mag #epg-day-menu {
+    width: 430px
+}
+
+.mag #channels-menu li,
+.mag #epg-categories-menu li,
+.mag #radiostations-menu li {
+    line-height: 62px
+}
+
+.mag #card-input6 {
+    top: 330px
+}
+
+.mag324,
+.im2100v,
+.im2100vi * {
+    -webkit-transform: none !important;
+    -webkit-backface-visibility: initial !important;
+    -webkit-perspective: none !important;
+    -webkit-transform-style: flat !important
+}

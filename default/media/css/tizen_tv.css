@@ -1,0 +1,45 @@
+.tizen_tv #tv-infobar {
+    width: 88.4%;
+    left: 30px
+}
+
+.tizen_tv #tv-infobar .screen-footer {
+    left: -10px
+}
+
+.tizen_tv #av-player {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0
+}
+
+body.play.tizen_tv {
+    background: #000
+}
+
+.tizen_tv .menu,
+.tizen_tv .label-menu,
+.tizen_tv .menu-button,
+.tizen_tv #tvchannels-screen .menu.remote-button {
+    display: none
+}
+
+.horizontal.tizen_tv #tvchannels-screen .menu-button,
+.horizontal.tizen_tv #tvchannels-screen .menu-button .label-menu {
+    display: inline-block
+}
+
+.horizontal.tizen_tv.mouse-over #tvchannels-screen .menu-button .label-menu {
+    display: block
+}
+
+.horizontal.tizen_tv #tvchannels-screen div.screen-footer div.left {
+    margin-left: 20px
+}
+
+.tizen_tv #epg-menu li {
+    width: 700px
+}

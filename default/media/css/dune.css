@@ -1,0 +1,8 @@
+.dune #tvepg-menu li {
+    line-height: 48px !important
+}
+
+.dune #logger-container,
+.dune .screen .screen-footer {
+    background: #030303
+}

@@ -1,0 +1,62 @@
+.android_stb * {
+    -webkit-transform: none !important;
+    -webkit-backface-visibility: initial !important;
+    -webkit-perspective: none !important;
+    -webkit-transform-style: flat !important
+}
+
+.android_stb.nv501wac *,
+.android_stb.nv501 * {
+    -webkit-backface-visibility: hidden !important
+}
+
+.android_stb #mainmenu div,
+.android_stb #appsmenu div,
+.android_stb #channels-menu li span.name,
+.android_stb #games-menu li,
+.android_stb #games-total,
+.android_stb #genres-menu li,
+.android_stb #video-screen h1,
+.android_stb #radiostations-menu li span.name {
+    text-shadow: none
+}
+
+.android_stb #mainmenu div.selected,
+.android_stb #mainmenu div:hover {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-iteration-count: 0;
+    animation-iteration-count: 0
+}
+
+.android_stb #appsmenu div.selected,
+.android_stb #appsmenu div:hover {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-iteration-count: 0;
+    animation-iteration-count: 0
+}
+
+.android_stb #mainmenu div#mainmenu-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.android_stb #mainmenu-selector div#mainmenu-selector-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.android_stb #appsmenu div#appsmenu-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.android_stb #appsmenu-selector div#appsmenu-selector-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.android_stb #text-bar {
+    font-size: 44px
+}

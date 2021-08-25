@@ -1,0 +1,29 @@
+.tvip object {
+    display: none
+}
+
+.tvip #mainmenu div.selected,
+.tvip #mainmenu div:hover,
+.tvip #appsmenu div.selected,
+.tvip #appsmenu div:hover {
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-iteration-count: 0;
+    animation-iteration-count: 0
+}
+
+.tvip #mainmenu div#mainmenu-selection,
+.tvip #mainmenu-selector div#mainmenu-selector-selection,
+.tvip #appsmenu div#appsmenu-selection,
+.tvip #appsmenu-selector div#appsmenu-selector-selection {
+    transition: none;
+    -webkit-transition: none
+}
+
+.tvip .screen .screen-footer {
+    transition: none;
+    -webkit-transition: none;
+    -webkit-transform: none;
+    -webkit-backface-visibility: visible;
+    -webkit-perspective: none
+}

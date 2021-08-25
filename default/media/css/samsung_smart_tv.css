@@ -1,0 +1,13 @@
+.samsung_smart_tv .screen-footer .remote-button.menu {
+    background: url("../img/main/remote-button-tools.png") no-repeat center center;
+    width: 41px
+}
+
+.samsung_smart_tv #pluginObjectPlayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0
+}

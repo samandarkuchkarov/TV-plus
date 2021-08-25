@@ -1,0 +1,1 @@
+function FirstLoadingScreen(){var that=this;function show(){}function init(){_FirstLoadingScreen.init();_FirstLoadingScreen.show()}this.setCustomMessage=function(text){Helper.setHtml("custom-loading-message",text);that.setOnHideCallback(function(){Helper.setHtml("custom-loading-message","")})}}_FirstLoadingScreen=new BaseScreen();FirstLoadingScreen.prototype=_FirstLoadingScreen;

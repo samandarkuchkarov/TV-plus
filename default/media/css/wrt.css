@@ -1,0 +1,6 @@
+.wrt * {
+    -webkit-transform: none !important;
+    -webkit-backface-visibility: initial !important;
+    -webkit-perspective: none !important;
+    -webkit-transform-style: flat !important
+}

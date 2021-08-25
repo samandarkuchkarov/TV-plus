@@ -1,0 +1,5 @@
+.vewd #vewd-player,
+.tbrowser #tbrowser-player {
+    object-fit: fill;
+    -webkit-object-fit: fill
+}

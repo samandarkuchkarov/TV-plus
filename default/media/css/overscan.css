@@ -1,0 +1,314 @@
+.overscan .screen {
+    bottom: 60px
+}
+
+.overscan .screen .screen-footer {
+    bottom: -61px;
+    height: 60px
+}
+
+.overscan.mouse-over .screen .screen-footer {
+    height: 100px
+}
+
+.overscan .screen.popup .screen-footer {
+    bottom: 0;
+    height: 40px
+}
+
+.overscan .popup.mouse-over .screen-footer {
+    height: 100px !important
+}
+
+.overscan .screen-header {
+    padding-top: 20px
+}
+
+.overscan.w720 .screen-header {
+    padding-top: 30px;
+    margin-left: 100px
+}
+
+.overscan #tvchannels-selector {
+    padding-top: 15px
+}
+
+.overscan.w720 #tvchannels-selector {
+    padding-top: 25px
+}
+
+.overscan.w720 #channels-menu {
+    width: 340px
+}
+
+.overscan.w720 #tvchannels-header {
+    width: 304px
+}
+
+.overscan #tvchannels-clock,
+.overscan #categorizedtv-clock,
+.overscan #videocatalog-clock,
+.overscan #settings-clock,
+.overscan #radio-clock {
+    padding-top: 20px
+}
+
+.overscan.w720 #tvchannels-clock,
+.overscan.w720 #categorizedtv-clock,
+.overscan.w720 #videocatalog-clock,
+.overscan.w720 #settings-clock,
+.overscan.w720 #radio-clock,
+.overscan.w720 #notifications-clock {
+    left: 520px;
+    padding-top: 30px
+}
+
+.overscan.w720 #tvchannels-clock {
+    left: 460px !important
+}
+
+.overscan #channels-menu li,
+.overscan #epg-categories-menu li,
+.overscan #tvchannels-selector div,
+.overscan #categorizedtv-selector div,
+.overscan #radio-selector div {
+    height: 56px;
+    line-height: 56px
+}
+
+.overscan #radiostations-menu li {
+    height: 56px;
+    line-height: 56px
+}
+
+.overscan.w720 #player-mode-info {
+    width: 60%
+}
+
+.overscan.w720 #player-mode-program-progress {
+    width: 51%
+}
+
+.overscan #tvepg-menu li,
+.overscan #programs-menu li {
+    height: 56px;
+    line-height: 50px
+}
+
+.overscan #epg-header {
+    padding-top: 25px
+}
+
+.overscan #epg-selector {
+    padding-top: 20px
+}
+
+.overscan #videocatalog-selector {
+    padding-top: 11px
+}
+
+.overscan #epg-day-menu {
+    padding-top: 25px
+}
+
+.overscan.w720 #epg-day-menu {
+    left: 520px;
+    padding-top: 30px
+}
+
+.overscan #radio-selector {
+    padding-top: 16px
+}
+
+.overscan #categorizedtv-selector {
+    padding-top: 16px
+}
+
+.overscan #games-selector-menu {
+    padding-top: 15px
+}
+
+.overscan #epg-channel-program-rating {
+    top: 130px
+}
+
+.overscan #epg-menu li,
+.overscan #epg-selector div {
+    margin-bottom: 1px
+}
+
+.overscan.w720 #epg-menu li {
+    width: 690px
+}
+
+.overscan #video-screen strong,
+.overscan #video-screen p {
+    line-height: 26px
+}
+
+.overscan #videos-menu li {
+    margin-bottom: -10px;
+    padding: 14px 5px
+}
+
+.overscan.w720 #videos-menu li {
+    width: 145px
+}
+
+.overscan #genres-menu li {
+    height: 58px;
+    line-height: 58px
+}
+
+.overscan #videocatalog-sort-header {
+    padding-top: 30px
+}
+
+.overscan.w720 #videocatalog-sort-header {
+    margin-right: 55px
+}
+
+.overscan.w720 #channels-menu,
+.overscan.w720 #epg-categories-menu,
+.overscan.w720 #epg-menu {
+    margin-left: 100px
+}
+
+.overscan.w720 #programs-menu {
+    margin-left: 520px;
+    margin-right: 65px
+}
+
+.overscan.w720 #tvepg-menu {
+    margin-left: 460px;
+    margin-right: 65px
+}
+
+.overscan.w720 #tvepg-menu li span.program-name,
+.overscan.w720 #notifications-menu li span.program-name {
+    width: 600px
+}
+
+.overscan.w720 #programs-menu li span.name {
+    width: 570px
+}
+
+.overscan.w720 .navigation-left {
+    left: 75px
+}
+
+.overscan.w720 .navigation-right {
+    left: 1217px
+}
+
+.overscan.w720 #mainmenu,
+.overscan.w720 #appsmenu {
+    margin-left: 85px
+}
+
+.overscan.w720 #epg-info {
+    margin-right: 50px;
+    margin-left: 820px
+}
+
+.overscan.w720 #epg-channel-program-rating {
+    right: 60px
+}
+
+.overscan #categorizedtv-genres-header {
+    padding-top: 25px
+}
+
+.overscan.w720 #categorizedtv-genres-header {
+    margin-right: 65px;
+    padding-top: 30px
+}
+
+.overscan.w720 #genres-menu {
+    margin-left: 100px
+}
+
+.overscan.w720 #videos-menu {
+    margin-left: 445px
+}
+
+.overscan.w720 #videos-menu li img {
+    width: 140px
+}
+
+.overscan.w720 #videocatalog-no-videos-in-category {
+    margin-left: 450px
+}
+
+.overscan.w720 #games-menu {
+    margin-left: 100px;
+    width: 825px
+}
+
+.overscan.w720 #radiostations-menu {
+    margin-left: 100px
+}
+
+.overscan.w720 #account-menu,
+.overscan.w720 #balance-menu,
+.overscan.w720 #info-menu,
+.overscan.w720 #settings-menu,
+.overscan.w720 #history-of-payments-menu {
+    margin-left: 100px;
+    width: 825px
+}
+
+.overscan.w720 #games-empty-list,
+.overscan.w720 #games-records-empty-list,
+.overscan.w720 #videocatalog-empty-list,
+.overscan.w720 #categorizedtv-empty-screen,
+.overscan.w720 #tvchannels-empty-screen,
+.overscan.w720 #empty-epg,
+.overscan.w720 #radio-empty-screen,
+.overscan.w720 #notifications-empty-category,
+.overscan.w720 #history-of-payments-empty-screen {
+    margin-left: 100px
+}
+
+.overscan.w720 #notifications-menu {
+    margin-left: 100px
+}
+
+.overscan.w720 #notifications-menu li {
+    width: 1090px
+}
+
+.overscan.w720 #payment-menu {
+    margin-left: 100px
+}
+
+.overscan.w720 #payment-menu div.label-note {
+    width: 830px
+}
+
+.overscan.w720 #history-of-payments-menu-header {
+    margin-left: 100px;
+    width: 815px
+}
+
+.overscan #settings-menu li {
+    font-size: 28px
+}
+
+.overscan.w720 #video-screen img#video-cover {
+    margin-left: 100px
+}
+
+.overscan.w720 #video-screen p {
+    width: 770px
+}
+
+.overscan.w720 #video-actions-panel {
+    margin-left: 460px
+}
+
+.overscan.w720 #tv-infobar,
+.overscan.w720 #video-infobar {
+    left: 70px;
+    right: 40px
+}
